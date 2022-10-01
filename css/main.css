@@ -693,4 +693,21 @@ grid-row-gap: 0.5rem;
         color: #282F44;
     }
 
+    .botones-pag {
+        font-size: 1rem;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: row;        
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    .bloque-03 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

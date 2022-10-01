@@ -147,7 +147,21 @@ a {
     transition-timing-function: ease-in-out;
 }
 
+.fotos-nosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
 
+.familia{
+    max-width: auto;
+    max-height: 20rem;
+    border: transparent solid;
+    border-radius: 1rem;  
+}
 
 
 /*bloque eventos*/
@@ -761,5 +775,10 @@ grid-row-gap: 0.5rem;
     
     }
     
+    h2.predominante.bloques {
+        
+        font-size: 2rem;
+    
+    }
 
 }

@@ -391,6 +391,12 @@ img.familia {
 
 }
 
+.tit-fil{
+    font-family: Kalam;
+    font-size: 2rem;
+    color: #282F44;
+}
+
 /*imagenes de los productos*/
 
 .recuadro-prod {
@@ -679,6 +685,12 @@ grid-row-gap: 0.5rem;
     .listas-01{
         text-align: left;
         font-size: 0.8rem;
+    }
+
+    .tit-fil{
+        font-family: Kalam;
+        font-size: 1rem;
+        color: #282F44;
     }
 
 }

@@ -122,7 +122,13 @@ a {
     margin: 0 2rem 0 0;
     border-radius: 3rem;
     border: #E6AF2E 3px solid;
-}
+
+    }
+
+    .navbar{
+        visibility: hidden;
+
+    }
 
 /*imagen index*/
 .fotos-ind {
@@ -147,7 +153,22 @@ a {
     transition-timing-function: ease-in-out;
 }
 
+.carousel-item{
+    
+    list-style: none;
+    font-family: Kalam;
+    font-size: 2rem;
 
+}
+
+.color{
+    color: #E6AF2E;
+}
+
+.decoimgcarr{
+    border: transparent solid;
+    border-radius: 1rem;
+}
 
 
 /*bloque eventos*/
@@ -182,9 +203,11 @@ div.img-eventos {
 }
 
 
-.bloques-de-art {
-    display: flex;
-    flex-direction: row;
+
+.acordeon{
+    visibility: hidden;  
+    position: absolute;  
+    top: -9999px;
 }
 
 /*PIE DE PAG*/
@@ -193,8 +216,8 @@ div.img-eventos {
     border-top: #E6AF2E solid;
     margin-top: 1rem;
     padding: 0 0 1rem 1rem;
-
-
+    
+    
 }
 
 .fa-solid.fa-envelope {
@@ -247,7 +270,7 @@ div.img-eventos {
     font-family: Kalam;
     font-size: 2rem;
     text-align: center;
-
+    
 }
 
 .listas-01{
@@ -258,8 +281,9 @@ div.img-eventos {
     font-family: Kalam;
     font-size: 2rem;
     color: #282F44;
-
+    
 }
+
 
 h2.predominante.bloques {
     border-bottom: #E6AF2E solid;
@@ -783,6 +807,17 @@ grid-row-gap: 0.5rem;
     
     }
 
+    .navbar{
+        visibility: visible;
+    }
+
+    .butt{
+        visibility: hidden;
+        position: absolute;
+        top: -9999px;
+    }
+
+
     /*bloque de eventos*/
     
     h2.predominante.bloques {
@@ -815,6 +850,15 @@ grid-row-gap: 0.5rem;
         font-family: "kalam";
         text-align: center;
     
+    }
+
+    .acordeon{
+        visibility: visible;
+        top: 1250px;
+    }
+    .bloques-de-art{
+        visibility: hidden;
+
     }
 
     /*nosotros*/

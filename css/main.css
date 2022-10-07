@@ -356,7 +356,7 @@ h2.predominante.bloques {
     background-repeat: space;
     background-position: center;
     background-size: 30rem 40rem;
-    opacity: 5;
+    /*opacity: 1;*/
 
 
 }
@@ -649,7 +649,15 @@ h2.predominante.bloques {
     .bloques-de-art {
         margin: 0.5rem;
     }
+    .navbar {
+        visibility: visible;
+    }
 
+    .butt {
+        visibility: hidden;
+        position: absolute;
+        top: -9999px;
+    }
 
     /*contactenos*/
 

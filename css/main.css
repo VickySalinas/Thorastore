@@ -11,14 +11,30 @@ header {
 
 }
 
+nav{
+    background-color: #ECECEC;
+    
+}
+
+.logo-dos {
+    color: #E6AF2E;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: "Bangers";
+    text-align: justify;    
+    width: 100%;
+}
+
 .bot-nav {
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 3rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 2rem;
     border-bottom: #E6AF2E solid;
+    
 }
+
 
 /*logo*/
 .logo {
@@ -31,15 +47,6 @@ header {
     transform: translate(-75px, -10px);
 }
 
-.logo.dos {
-    color: #E6AF2E;
-    font-weight: bolder;
-    font-size: 2rem;
-    font-family: "Bangers";
-    text-align: justify;
-    /*transform: translate(10px, -70px);*/
-    width: 50%;
-}
 
 .imagen-logo {
     max-width: 15rem;
@@ -344,9 +351,12 @@ h2.predominante.bloques {
 
 .fbg {
     background-image: url(../img/logothora-removebg-preview.png);
-    background-repeat: repeat;
+    resize: both;
+    overflow: auto;
+    background-repeat: space;
     background-position: center;
     background-size: 30rem 40rem;
+    opacity: 5;
 
 
 }

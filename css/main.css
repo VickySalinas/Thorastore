@@ -131,28 +131,13 @@ a {
 }
 
 /*imagen index*/
-/*.fotos-ind {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.fotos-ind img {
-    max-width: auto;
-    max-height: 20rem;
-    border: transparent solid;
-    border-radius: 1rem;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}*/
 
 .container-md.p-3{
-    border: transparent solid;
-    border-radius: 2rem;
+    
     padding: 1rem;
+    width: 600px;
+    height: 550px;
 }
 
 .carousel-item {
@@ -163,6 +148,18 @@ a {
 
 }
 
+.calecita{
+    width: 800px;
+    height:  1000px;
+}
+
+.calecita img{
+    max-height: 400px;
+    aspect-ratio: 1/2;    
+    object-fit:scale-down;
+    
+    
+}
 
 
 .color {
@@ -216,38 +213,18 @@ div.img-eventos {
 }
 
 /*PIE DE PAG*/
-#pie {
+.pie{
     background-color: #ECECEC;
     border-top: #E6AF2E solid;
     margin-top: 1rem;
     padding: 0 0 1rem 1rem;
-
-
+    
 }
 
 .fa-solid.fa-envelope {
     padding-top: 1rem;
     color: #E6AF2E;
 }
-
-.contenedor {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-
-    gap: 2rem;
-}
-
-
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-/*botones enviar y limpiar*/
 
 .color-predominante {
     border: #282F44 solid;
@@ -590,10 +567,7 @@ h2.predominante.bloques {
         border-radius: 2rem;
     }
 
-    /* img.familia {
-            
-        
-        } */
+    
 
     /*contactenos*/
 

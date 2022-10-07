@@ -1,7 +1,7 @@
 /*header*/
 header {
     background-color: #ECECEC;
-    
+
 }
 
 /*iconos superiores*/
@@ -72,7 +72,7 @@ header {
     cursor: pointer;
     margin-right: 15px;
     text-align: right;
-
+    
 
 
 }
@@ -82,7 +82,7 @@ header {
     border: #D75281 2px solid;
     border-radius: 20px;
     padding: 5px;
-    
+
 
 
 }
@@ -100,7 +100,7 @@ a {
 .carrito {
     background-color: white;
     border: #E6AF2E solid;
-    border-radius: 3rem;    
+    border-radius: 3rem;
     padding: 1rem 0 1rem 0;
     margin-right: 1rem;
     width: 15rem;
@@ -118,30 +118,26 @@ a {
 }
 
 .qeb {
-    width: 30rem;    
+    width: 30rem;
     margin: 0 2rem 0 0;
     border-radius: 3rem;
     border: #E6AF2E 3px solid;
 
-    }
+}
 
-    .navbar{
-        visibility: hidden;
+.navbar {
+    visibility: hidden;
 
-    }
+}
 
 /*imagen index*/
-.fotos-ind {
+/*.fotos-ind {
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-}
 
-.fotos-ind img:hover{
-    transform: scale(2);
 }
 
 .fotos-ind img {
@@ -151,21 +147,28 @@ a {
     border-radius: 1rem;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
+}*/
+
+.container-md{
+    border: transparent solid;
+    border-radius: 2rem;
 }
 
-.carousel-item{
-    
+.carousel-item {
+
     list-style: none;
     font-family: Kalam;
     font-size: 2rem;
 
 }
 
-.color{
+
+
+.color {
     color: #E6AF2E;
 }
 
-.decoimgcarr{
+.decoimgcarr {
     border: transparent solid;
     border-radius: 1rem;
 }
@@ -204,10 +207,11 @@ div.img-eventos {
 
 
 
-.acordeon{
-    visibility: hidden;  
-    position: absolute;  
-    top: -9999px;
+.acordeon {
+    visibility: hidden;
+    position: absolute;
+        top: -9999px;
+
 }
 
 /*PIE DE PAG*/
@@ -216,8 +220,8 @@ div.img-eventos {
     border-top: #E6AF2E solid;
     margin-top: 1rem;
     padding: 0 0 1rem 1rem;
-    
-    
+
+
 }
 
 .fa-solid.fa-envelope {
@@ -244,7 +248,7 @@ div.img-eventos {
 
 /*botones enviar y limpiar*/
 
-.color-predominante{
+.color-predominante {
     border: #282F44 solid;
     background-color: #E6AF2E;
     border-style: double;
@@ -255,10 +259,11 @@ div.img-eventos {
     font-size: 1rem;
 }
 
-.let-foot{
+.let-foot {
     font-size: 1rem;
 }
-.foot{
+
+.foot {
     border: #E6AF2E solid;
     border-radius: 2rem;
 }
@@ -270,10 +275,10 @@ div.img-eventos {
     font-family: Kalam;
     font-size: 2rem;
     text-align: center;
-    
+
 }
 
-.listas-01{
+.listas-01 {
     text-align: left;
 }
 
@@ -281,7 +286,7 @@ div.img-eventos {
     font-family: Kalam;
     font-size: 2rem;
     color: #282F44;
-    
+
 }
 
 
@@ -307,7 +312,7 @@ h2.predominante.bloques {
     background: linear-gradient(#D75281, #E6AF2E);
 }
 
-.tit-ev {    
+.tit-ev {
     padding: 1rem 0 1rem 0;
     display: flex;
     flex-direction: row;
@@ -322,7 +327,7 @@ h2.predominante.bloques {
 
 }
 
-.info-evento {    
+.info-evento {
     padding: 1rem 2rem 1rem 2rem;
     margin-right: 0;
     font-size: 1rem;
@@ -331,20 +336,20 @@ h2.predominante.bloques {
 
 }
 
-.fotos-nosotros{
+.fotos-nosotros {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-    
+
+
 }
 
-.familia{
+.familia {
     max-width: auto;
     max-height: 20rem;
     border: transparent solid;
-    border-radius: 2rem;  
+    border-radius: 2rem;
     margin: 2rem;
 }
 
@@ -359,16 +364,16 @@ h2.predominante.bloques {
 
 }
 
-.fbg{
+.fbg {
     background-image: url(../img/logothora-removebg-preview.png);
     background-repeat: repeat;
     background-position: center;
     background-size: 30rem 40rem;
-    
-    
+
+
 }
 
-#encabezado-contacto {    
+#encabezado-contacto {
     margin: 2rem 8rem 0 3rem;
     display: flex;
     flex-direction: row;
@@ -381,7 +386,7 @@ h2.predominante.bloques {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;    
+    align-items: flex-start;
     padding: 2rem 2rem 2rem 3rem;
 }
 
@@ -397,7 +402,7 @@ h2.predominante.bloques {
     align-items: flex-end;
 }
 
-.cuadradito{
+.cuadradito {
     border: #D75281 solid;
     border-radius: 2rem;
 }
@@ -425,7 +430,7 @@ h2.predominante.bloques {
 
 }
 
-.tit-fil{
+.tit-fil {
     font-family: Kalam;
     font-size: 2rem;
     color: #282F44;
@@ -443,7 +448,7 @@ h2.predominante.bloques {
     border: transparent solid;
     border-radius: 1rem;
     transform: translateX(8px);
-    
+
 
 }
 
@@ -460,15 +465,15 @@ h2.predominante.bloques {
     justify-content: space-evenly;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    grid-template-areas: 
-    "prod01 prod02 prod03 prod04"
-    "prod01 prod02 prod03 prod04"
-    "prod01 prod02 prod03 prod04"
-    "prod01 prod02 prod03 prod04"
-;
-grid-column-gap: 1rem;
-grid-row-gap: 1rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "prod01 prod02 prod03 prod04"
+        "prod01 prod02 prod03 prod04"
+        "prod01 prod02 prod03 prod04"
+        "prod01 prod02 prod03 prod04"
+    ;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
 
 
 }
@@ -511,7 +516,7 @@ grid-row-gap: 1rem;
     justify-content: center;
     text-align: center;
     border: #E6AF2E solid;
-    border-radius: 1rem;    
+    border-radius: 1rem;
     margin-bottom: 1rem;
     width: 20rem;
     height: 30rem;
@@ -524,15 +529,17 @@ grid-row-gap: 1rem;
     /*pagina principal*/
 
     .bloques-de-art {
-        
+
         flex-direction: column;
-                
+
     }
-    .art-01{
+
+    .art-01 {
         align-items: stretch;
         width: 100%;
-        
+
     }
+
     .bloque-03 {
         display: flex;
         flex-direction: row;
@@ -540,48 +547,49 @@ grid-row-gap: 1rem;
     }
 
     #iconos {
-        
+
         justify-content: center;
     }
+
     .qeb {
-        width: 20rem;    
-        
+        width: 20rem;
+
     }
 
     .botones-pag {
         font-size: 1rem;
         margin-right: 15px;
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
         justify-content: center;
-    
-    
-    
+
+
+
     }
-    
+
     .horizontal.botones {
         background: linear-gradient(#D75281, #E6AF2E);
         border: #D75281 2px solid;
         border-radius: 20px;
         padding: 5px;
-    
-    
-    
+
+
+
     }
 
     .fotos-ind img {
         max-height: 10rem;
-        
+
     }
 
-    .familia{
+    .familia {
         max-height: 8rem;
         margin: 1rem;
         border: transparent solid;
         border-radius: 2rem;
     }
 
-        /* img.familia {
+    /* img.familia {
             
         
         } */
@@ -595,30 +603,30 @@ grid-row-gap: 1rem;
     /*paginas secundarias*/
 
     .productos {
-        
+
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr; 
-        grid-template-areas: 
-        "prod03 prod04"
-        "prod03 prod04"
-        "prod03 prod04"
-        "prod03 prod04"  
-        "prod01 prod02"
-        "prod01 prod02"
-        "prod01 prod02"
-        "prod01 prod02"                    
-        
-    ;
-    grid-column-gap: 1rem;
-grid-row-gap: 1rem;
-    
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "prod03 prod04"
+            "prod03 prod04"
+            "prod03 prod04"
+            "prod03 prod04"
+            "prod01 prod02"
+            "prod01 prod02"
+            "prod01 prod02"
+            "prod01 prod02"
+
+        ;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+
     }
 
     .centrar {
         width: 15rem;
         height: 23rem;
     }
-    
+
 
     .recuadro-prod {
         max-width: 10rem;
@@ -627,8 +635,8 @@ grid-row-gap: 1rem;
         cursor: pointer;
         border: transparent solid;
         border-radius: 1rem;
-    
-    
+
+
     }
 
     .nom-prec {
@@ -637,13 +645,13 @@ grid-row-gap: 1rem;
         font-size: 0.9rem;
     }
 
-    
+
 }
 
 /*media queries modo tablet*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    #pie{
+    #pie {
         margin: 0.5rem 0 0 0;
     }
 
@@ -652,28 +660,29 @@ grid-row-gap: 1rem;
     .art-01 {
         margin: 0.5rem 0 0.5rem 0;
     }
+
     .bloques-de-art {
         margin: 0.5rem;
     }
-    
+
 
     /*contactenos*/
 
-    #encabezado-contacto {    
+    #encabezado-contacto {
         margin: 0;
         transform: translateX(5px);
-        
+
     }
 
     .form-cont {
-        
+
         justify-content: center;
-        align-items: flex-start;    
+        align-items: flex-start;
         padding: 1rem 1rem 1rem 1rem;
     }
-    
+
     .form-cont-02 {
-        
+
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -681,8 +690,8 @@ grid-row-gap: 1rem;
         justify-content: flex-start;
         align-items: flex-end;
     }
-    
-    .fmi{
+
+    .fmi {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -691,9 +700,9 @@ grid-row-gap: 1rem;
     }
 
     .fou {
-        
-        flex-direction: column;         
-    
+
+        flex-direction: column;
+
     }
 
     /*paginas secundarias*/
@@ -703,13 +712,13 @@ grid-row-gap: 1rem;
         height: 19rem;
         margin-bottom: 0.2rem;
     }
-    
+
     .recuadro-prod {
         max-width: 7rem;
         max-height: 7rem;
-        margin: 2rem; 
-        
-    
+        margin: 2rem;
+
+
     }
 
     .nom-prec {
@@ -718,22 +727,22 @@ grid-row-gap: 1rem;
         font-size: 0.7rem;
     }
 
-    .productos{
+    .productos {
         grid-column-gap: 0.5rem;
-grid-row-gap: 0.5rem;
-    } 
-    
-    .filtrar{        
-    width: 20%;    
-    
+        grid-row-gap: 0.5rem;
     }
 
-    .listas-01{
+    .filtrar {
+        width: 20%;
+
+    }
+
+    .listas-01 {
         text-align: left;
         font-size: 0.8rem;
     }
 
-    .tit-fil{
+    .tit-fil {
         font-family: Kalam;
         font-size: 1rem;
         color: #282F44;
@@ -743,12 +752,13 @@ grid-row-gap: 0.5rem;
         font-size: 1rem;
         margin-right: 15px;
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-    
-    
+
+
     }
+
     .bloque-03 {
         display: flex;
         flex-direction: row;
@@ -759,22 +769,21 @@ grid-row-gap: 0.5rem;
 }
 
 /*media queries modo movil L*/
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
 
     header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
     }
-    
+
     /*pagina principal*/
 
     #iconos {
         justify-content: center;
         align-content: center;
-        transform: translateX(-4
-        0px);
+        transform: translateX(-4 0px);
     }
 
     .imagen-logo {
@@ -784,9 +793,9 @@ grid-row-gap: 0.5rem;
     }
 
     .logo {
-        
+
         font-size: 3rem;
-        
+
         text-align: justify;
         margin: 1rem 0 1rem 0;
         transform: translate(-40px, 60px);
@@ -798,20 +807,20 @@ grid-row-gap: 0.5rem;
         align-items: center;
     }
 
-    .qeb {         
-        margin: 0 2rem 1rem 2rem;        
+    .qeb {
+        margin: 0 2rem 1rem 2rem;
     }
 
-    .carrito {     
+    .carrito {
         margin: 0 1rem 0 1rem;
-    
+
     }
 
-    .navbar{
+    .navbar {
         visibility: visible;
     }
 
-    .butt{
+    .butt {
         visibility: hidden;
         position: absolute;
         top: -9999px;
@@ -819,55 +828,59 @@ grid-row-gap: 0.5rem;
 
 
     /*bloque de eventos*/
-    
+
     h2.predominante.bloques {
-        
+
         font-size: 2rem;
-    
+
     }
 
-    .predominante.art {        
+    .predominante.art {
         font-size: 1rem;
-        
-    
+
+
     }
 
-    .predominante{
+    .predominante {
         font-size: 1rem;
     }
 
-    .tit-ev {    
+    .tit-ev {
         padding: 1rem 0 1rem 0;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
-    .info-evento {    
+    .info-evento {
         padding: 0rem 1rem 0rem 1rem;
         margin-right: 0;
         font-size: 1rem;
         font-family: "kalam";
         text-align: center;
-    
+
     }
 
-    .acordeon{
+    .acordeon {
         visibility: visible;
-        top: 1250px;
+        position: relative;
+        top:0;
     }
-    .bloques-de-art{
+
+    .bloques-de-art {
         visibility: hidden;
+        position: absolute;
+        top: -9999px;
 
     }
 
     /*nosotros*/
 
-    .familia{
+    .familia {
         max-height: 5rem;
     }
 
     /*footer*/
 
-    
+
 }

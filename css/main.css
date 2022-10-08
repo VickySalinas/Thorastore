@@ -69,6 +69,44 @@ nav{
     justify-content: flex-end;
 }
 
+/*hamburguesa*/
+.navbar.bg-light{
+    background-color: #ECECEC;
+}
+
+.btn-close{
+    background-color: #E6AF2E;
+}
+.navbar{
+    font-family: Kalam;
+    font-size: 2rem;
+    color: #E6AF2E;
+    
+}
+
+.nav-link{
+    font-family: Kalam;
+    font-size: 2rem;
+    color: #E6AF2E;
+}
+
+.navbar-toggler{
+    background-color: #E6AF2E;
+}
+
+.navbar-toggler-icon{
+    background-color: #D75281;
+}
+
+.offcanvas-header{
+    background-color: #ECECEC;
+}
+
+.dropdown-menu{
+    border: #D75281 solid;
+    background: linear-gradient(#D75281, #E6AF2E);
+}
+
 /*botones paginas*/
 
 .botones-pag {

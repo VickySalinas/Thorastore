@@ -11,9 +11,9 @@ header {
 
 }
 
-nav{
+nav {
     background-color: #ECECEC;
-    
+
 }
 
 .logo-dos {
@@ -21,7 +21,7 @@ nav{
     font-weight: bolder;
     font-size: 2rem;
     font-family: "Bangers";
-    text-align: justify;    
+    text-align: justify;
     width: 100%;
 }
 
@@ -32,7 +32,7 @@ nav{
     justify-content: flex-end;
     gap: 2rem;
     border-bottom: #E6AF2E solid;
-    
+
 }
 
 
@@ -52,11 +52,15 @@ nav{
 
 }
 
-@keyframes rotacion-logo{
+@keyframes rotacion-logo {
 
-    from{transform: rotateZ(0deg) translate(0, 0);}
+    from {
+        transform: rotateZ(0deg) translate(0, 0);
+    }
 
-    to{transform: rotateZ(360deg) translate(-75px, -10px);}
+    to {
+        transform: rotateZ(360deg) translate(-75px, -10px);
+    }
 
 
 }
@@ -65,7 +69,7 @@ nav{
     max-width: 15rem;
     max-height: 20rem;
     transform: translate(-30px, -100px);
-    
+
 }
 
 #marca {
@@ -84,39 +88,40 @@ nav{
 }
 
 /*hamburguesa*/
-.navbar.bg-light{
+.navbar.bg-light {
     background-color: #ECECEC;
 }
 
-.btn-close{
-    background-color: #E6AF2E;
-}
-.navbar{
-    font-family: Kalam;
-    font-size: 2rem;
-    color: #E6AF2E;
-    
-}
-
-.nav-link{
-    font-family: Kalam;
-    font-size: 2rem;
-    color: #E6AF2E;
-}
-
-.navbar-toggler{
+.btn-close {
     background-color: #E6AF2E;
 }
 
-.navbar-toggler-icon{
+.navbar {
+    font-family: Kalam;
+    font-size: 2rem;
+    color: #E6AF2E;
+
+}
+
+.nav-link {
+    font-family: Kalam;
+    font-size: 2rem;
+    color: #E6AF2E;
+}
+
+.navbar-toggler {
+    background-color: #E6AF2E;
+}
+
+.navbar-toggler-icon {
     background-color: #D75281;
 }
 
-.offcanvas-header{
+.offcanvas-header {
     background-color: #ECECEC;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     border: #D75281 solid;
     background: linear-gradient(#D75281, #E6AF2E);
 }
@@ -131,7 +136,7 @@ nav{
     cursor: pointer;
     margin-right: 15px;
     text-align: right;
-    
+
 
 
 }
@@ -192,8 +197,8 @@ a {
 /*imagen index*/
 
 
-.container-md.p-3{
-    
+.container-md.p-3 {
+
     padding: 1rem;
     width: 600px;
     height: 550px;
@@ -207,17 +212,17 @@ a {
 
 }
 
-.calecita{
+.calecita {
     width: 800px;
-    height:  1000px;
+    height: 1000px;
 }
 
-.calecita img{
+.calecita img {
     max-height: 400px;
-    aspect-ratio: 1/2;    
-    object-fit:scale-down;
-    
-    
+    aspect-ratio: 1/2;
+    object-fit: scale-down;
+
+
 }
 
 
@@ -267,17 +272,17 @@ div.img-eventos {
 .acordeon {
     visibility: hidden;
     position: absolute;
-        top: -9999px;
+    top: -9999px;
 
 }
 
 /*PIE DE PAG*/
-.pie{
+.pie {
     background-color: #ECECEC;
     border-top: #E6AF2E solid;
     margin-top: 1rem;
     padding: 0 0 1rem 1rem;
-    
+
 }
 
 .fa-solid.fa-envelope {
@@ -505,14 +510,14 @@ h2.predominante.bloques {
     justify-content: space-evenly;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
         "prod01 prod02 prod03 prod04"
         "prod01 prod02 prod03 prod04"
         "prod01 prod02 prod03 prod04"
         "prod01 prod02 prod03 prod04"
     ;
-    grid-column-gap: 1rem;
+    grid-column-gap: 5px;
     grid-row-gap: 1rem;
 
 
@@ -539,7 +544,7 @@ h2.predominante.bloques {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
+    padding-left: 2rem;
 }
 
 /*texto productos*/
@@ -562,9 +567,9 @@ h2.predominante.bloques {
     height: 30rem;
 }
 
-/*media queries modo laptop*/
+/*media queries modo 1500*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1500px) {
 
     /*pagina principal*/
 
@@ -629,7 +634,7 @@ h2.predominante.bloques {
         border-radius: 2rem;
     }
 
-    
+
 
     /*contactenos*/
 
@@ -639,25 +644,25 @@ h2.predominante.bloques {
 
     /*paginas secundarias*/
 
-    .productos {
-
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr;
+    /*.productos {
         grid-template-areas:
-            "prod03 prod04"
-            "prod03 prod04"
-            "prod03 prod04"
-            "prod03 prod04"
             "prod01 prod02"
             "prod01 prod02"
             "prod01 prod02"
             "prod01 prod02"
-
+            /*"prod03 prod04"
+            "prod03 prod04"
+            "prod03 prod04"
+            "prod03 prod04"
         ;
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
-
+        grid-template-columns: repeat(2, 1fr);
     }
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* .prod04{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }  */
 
     .centrar {
         width: 15rem;
@@ -685,8 +690,8 @@ h2.predominante.bloques {
 
 }
 
-/*media queries modo tablet*/
-@media screen and (max-width: 768px) {
+/*media queries modo laptop*/
+@media screen and (max-width: 1100px) {
 
     #pie {
         margin: 0.5rem 0 0 0;
@@ -701,6 +706,7 @@ h2.predominante.bloques {
     .bloques-de-art {
         margin: 0.5rem;
     }
+
     .navbar {
         visibility: visible;
     }
@@ -779,7 +785,9 @@ h2.predominante.bloques {
 
     .filtrar {
         width: 20%;
-
+        visibility: hidden;
+        position: absolute;
+        left: -9999px;
     }
 
     .listas-01 {
@@ -813,6 +821,39 @@ h2.predominante.bloques {
 
 }
 
+
+@media screen and (max-width:768px) {
+
+    .productos {
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-areas:
+            "prod01 prod02"
+            "prod01 prod02"
+            "prod01 prod02"
+            "prod01 prod02"
+            "prod03 prod04"
+            "prod03 prod04"
+            "prod03 prod04"
+            "prod03 prod04"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+        grid-column-gap: 30px;
+
+    }
+}
+
+.centrar {
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 30rem;
+}
+.recuadro-prod {
+    max-width: 15rem;
+    max-height: 15rem;
+    
+}
+
 /*media queries modo movil L*/
 @media screen and (max-width: 425px) {
 
@@ -840,7 +881,7 @@ h2.predominante.bloques {
     .logo {
 
         font-size: 3rem;
-
+        
         text-align: justify;
         margin: 1rem 0 1rem 0;
         transform: translate(-40px, 60px);
@@ -909,7 +950,7 @@ h2.predominante.bloques {
     .acordeon {
         visibility: visible;
         position: relative;
-        top:0;
+        top: 0;
     }
 
     .bloques-de-art {

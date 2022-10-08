@@ -45,13 +45,27 @@ nav{
     text-align: justify;
     margin: 1rem 0 1rem 0;
     transform: translate(-75px, -10px);
+    position: absolute;
+    animation-name: rotacion-logo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
 }
 
+@keyframes rotacion-logo{
+
+    from{transform: rotateZ(0deg) translate(0, 0);}
+
+    to{transform: rotateZ(360deg) translate(-75px, -10px);}
+
+
+}
 
 .imagen-logo {
     max-width: 15rem;
     max-height: 20rem;
     transform: translate(-30px, -100px);
+    
 }
 
 #marca {

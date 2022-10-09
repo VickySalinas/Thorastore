@@ -36,63 +36,66 @@
     <!-- inicio header -->
     <header>
         <!-- botones navegador superior -->
-        <div id="iconos">
-            <ul class="bot-nav">
-                <li class="horizontal">
-                    <a href="../index.html" class="logos-nav"><i class="fa-solid fa-house"></i></a>
-                </li>
+        <div class="row">
+            <div class="col-8">
 
-                <li class="horizontal">
-                    <a href="./contacto.html" class="logos-nav"><i class="fa-solid fa-address-book"></i></a>
-                </li>
-
-                <li class="horizontal">
-                    <a href="#buscador" class="logos-nav"><i class="fa-solid fa-magnifying-glass"
-                            id="icon-search"></i></a>
-
-                </li>
-
-                <li class="horizontal">
-                    <a href="#pie"><i class="fa-solid fa-arrow-down"></i></a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- logo de pagina -->
-
-        <!-- logo de pagina -->
-        <div id="marca">
-            <div>
-                <h1 class="logo">Thorastore</h1>
             </div>
 
-            <!-- imagen logo -->
-            <div>
-                <img class="imagen-logo" src="../img/logothora-removebg-preview.png" class="img"
-                    alt="logo de thorastore">
+            <div id="iconos" class="col-4">
+                <ul class="bot-nav">
+                    <li class="horizontal">
+                        <a href="../index.html" class="logos-nav"><i class="fa-solid fa-house"></i></a>
+                    </li>
 
+                    <li class="horizontal">
+                        <a href="./contacto.html" class="logos-nav"><i class="fa-solid fa-address-book"></i></a>
+                    </li>
+
+                    <li class="horizontal">
+                        <a href="#buscador" class="logos-nav"><i class="fa-solid fa-magnifying-glass"
+                                id="icon-search"></i></a>
+
+                    </li>
+
+                    <li class="horizontal">
+                        <a href="#pie"><i class="fa-solid fa-arrow-down"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <!-- buacador y carrito -->
-        <div id="iconos">
-            <div class="bloque-03">
-
-                <div id="buscador">
-                    <input type="text" id="inputSearch" class="qeb" placeholder="¿que estas buscando?">
+        <div class="row">
+            <div class="col-1">
+                <div id="marca">
+                    <div>
+                        <h1 class="logo">Thorastore</h1>
+                    </div>
                 </div>
+                <div class="col-11">
+                    <img class="imagen-logo" src="../img/logothora-removebg-preview.png" class="img"
+                        alt="logo de thorastore">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- buacador y carrito -->
+            <div id="iconos">
+                <div class="bloque-03 col-8">
 
-
-                <div class="carrito">
-                    <i class="fa-solid fa-cart-shopping">Carrito</i>
-                    <input type="text" id="inputSearch" placeholder="0" class="cero">
+                    <div id="buscador">
+                        <input type="text" id="inputSearch" class="qeb" placeholder="¿que estas buscando?">
+                    </div>
+                    <div class="carrito col-4">
+                        <i class="fa-solid fa-cart-shopping">Carrito</i>
+                        <input type="text" id="inputSearch" placeholder="0" class="cero">
+                    </div>
                 </div>
             </div>
         </div>
         <!-- inicio nav -->
-        <nav>
+        <nav class="row">
             <!-- botones -->
-            <div class="butt">
+            <div class="butt container-fluid">
                 <ul class="botones-pag">
                     <li class="horizontal botones"><a href="./aleer.html">
                             <div>A LEER</div>

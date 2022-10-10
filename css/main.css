@@ -1056,6 +1056,9 @@ h2.predominante.bloques {
         top: -9999px;
     }
 
+    .foot {
+        width: 5px;
+    }
 
     /*bloque de eventos*/
 

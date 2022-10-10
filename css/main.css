@@ -1,6 +1,7 @@
 /*header*/
 header {
     background-color: #ECECEC;
+    
 
 }
 
@@ -44,7 +45,7 @@ nav {
     font-family: "Bangers";
     text-align: justify;
     margin: 1rem 0 1rem 0;
-    transform: translate(-75px, -10px);
+    transform: translate(180px, -10px);
     position: absolute;
     animation-name: rotacion-logo;
     animation-duration: 1s;
@@ -52,14 +53,30 @@ nav {
 
 }
 
+.logo-tres{
+    color: #E6AF2E;
+    font-weight: bolder;
+    font-size: 5rem;
+    font-family: "Bangers";
+    text-align: justify;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    /*transform: translate(180px, -10px);
+    position: absolute;
+    animation-name: rotacion-logo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;*/
+
+}
+
 @keyframes rotacion-logo {
 
     from {
-        transform: rotateZ(0deg) translate(0, 0);
+        transform: rotateZ(0deg) translate(300px, -30px);
     }
 
     to {
-        transform: rotateZ(360deg) translate(-75px, -10px);
+        transform: rotateZ(360deg) translate(180px, -10px);
     }
 
 
@@ -134,7 +151,7 @@ nav {
     font-family: Kalam;
     font-size: 2rem;
     cursor: pointer;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
     text-align: right;
 
 
@@ -149,6 +166,10 @@ nav {
 
 
 
+}
+
+.butt.container-fluid{
+    margin-top: 2rem;
 }
 
 a {
@@ -213,8 +234,14 @@ a {
 }
 
 .calecita {
+    background-color: #ECECEC;
+    border: #E6AF2E 1rem solid;
+    border-radius: 1rem;
     width: 800px;
     height: 1000px;
+    /*z-index: 1;*/
+    
+
 }
 
 .calecita img {
@@ -227,7 +254,10 @@ a {
 
 
 .color {
-    color: #E6AF2E;
+    color: rgb(177, 174, 174);
+    position: relative;
+    /*transform: translateY(200px);*/
+    /*z-index: 2;*/
 }
 
 .decoimgcarr {
@@ -513,9 +543,9 @@ h2.predominante.bloques {
     grid-template-rows: auto;
     grid-template-areas:
         "prod01 prod02 prod03 prod04"
-        "prod01 prod02 prod03 prod04"
-        "prod01 prod02 prod03 prod04"
-        "prod01 prod02 prod03 prod04"
+        "prod05 prod06 prod07 prod08"
+        "prod09 prod10 prod11 prod12"
+        "prod13 prod14 prod15 prod16"
     ;
     grid-column-gap: 5px;
     grid-row-gap: 1rem;
@@ -538,6 +568,49 @@ h2.predominante.bloques {
 .prod04 {
     grid-area: prod04;
 }
+
+.prod05 {
+    grid-area: prod05;
+}
+
+.prod06 {
+    grid-area: prod06;
+}
+
+.prod07 {
+    grid-area: prod07;
+}
+
+.prod08 {
+    grid-area: prod08;
+}
+
+.prod09 {
+    grid-area: prod09;
+}
+.prod10 {
+    grid-area: prod10;
+}
+.prod11 {
+    grid-area: prod11;
+}
+.prod12 {
+    grid-area: prod12;
+}
+.prod13 {
+    grid-area: prod13;
+}
+.prod14 {
+    grid-area: prod14;
+}
+.prod15 {
+    grid-area: prod15;
+}
+.prod16 {
+    grid-area: prod16;
+}
+
+
 
 .agrupar {
 
@@ -567,9 +640,9 @@ h2.predominante.bloques {
     height: 30rem;
 }
 
-/*media queries modo 1500*/
+/*media queries*/
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
 
     /*pagina principal*/
 
@@ -644,25 +717,17 @@ h2.predominante.bloques {
 
     /*paginas secundarias*/
 
-    /*.productos {
+    .productos{
         grid-template-areas:
-            "prod01 prod02"
-            "prod01 prod02"
-            "prod01 prod02"
-            "prod01 prod02"
-            /*"prod03 prod04"
-            "prod03 prod04"
-            "prod03 prod04"
-            "prod03 prod04"
+            "prod01 prod02 prod03"
+            "prod04 prod05 prod06"
+            "prod07 prod08 prod09"
+            "prod10 prod11 prod12"
+            "prod13 prod14 prod15"
+            "prod16 . ."
+            
         ;
-        grid-template-columns: repeat(2, 1fr);
     }
-    /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
-    /* .prod04{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }  */
 
     .centrar {
         width: 15rem;
@@ -690,7 +755,7 @@ h2.predominante.bloques {
 
 }
 
-/*media queries modo laptop*/
+
 @media screen and (max-width: 1100px) {
 
     #pie {
@@ -827,36 +892,59 @@ h2.predominante.bloques {
     .productos {
         /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
-            "prod01 prod02"
-            "prod01 prod02"
-            "prod01 prod02"
-            "prod01 prod02"
-            "prod03 prod04"
-            "prod03 prod04"
-            "prod03 prod04"
-            "prod03 prod04"
-        ;
+                "prod01 prod02"
+                "prod03 prod04"
+                "prod05 prod06"
+                "prod07 prod08"
+                "prod09 prod10"
+                "prod11 prod12"
+                "prod13 prod14"
+                "prod15 prod16"
+            ;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 2rem;
         grid-column-gap: 30px;
 
     }
+    .centrar {
+        margin-bottom: 2rem;
+        width: 20rem;
+        height: 30rem;
+    }
+    .recuadro-prod {
+        max-width: 15rem;
+        max-height: 15rem;
+        
+    }
 }
 
-.centrar {
-    margin-bottom: 2rem;
-    width: 20rem;
-    height: 30rem;
+@media screen and (max-width: 700px){
+        
+    .productos{
+        grid-template-areas: 
+        "prod01"
+        "prod02"
+        "prod03"
+        "prod04"
+        "prod05"
+        "prod06"
+        "prod07"
+        "prod08"
+        "prod09"
+        "prod10"
+        "prod11"
+        "prod12"
+        "prod13"
+        "prod14"
+        "prod15"
+        "prod16"
+        ;
+    }
+
+
+    ;
 }
-.recuadro-prod {
-    max-width: 15rem;
-    max-height: 15rem;
-    
-}
 
-
-
-/*media queries modo movil L*/
 @media screen and (max-width: 425px) {
 
     header {
@@ -972,3 +1060,4 @@ h2.predominante.bloques {
 
 
 }
+

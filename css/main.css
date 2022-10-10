@@ -815,7 +815,7 @@ h2.predominante.bloques {
     .logo {
         font-size: 3rem;
         transform: translate(120px, 20px);
-        
+
 
 
     }
@@ -825,11 +825,12 @@ h2.predominante.bloques {
         from {
             transform: rotateZ(0deg) translate(300px, -30px);
         }
-    
+
         to {
             transform: rotateZ(360deg) translate(120px, 20px);
         }
     }
+
     /*contactenos*/
 
     #encabezado-contacto {

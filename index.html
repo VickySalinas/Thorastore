@@ -36,11 +36,7 @@
     <header>
         <!-- botones navegador superior -->
         <div class="row">
-            <div class="col-8">
-    
-            </div>
-    
-            <div id="iconos" class="col-4">
+            <div id="iconos" class="container-fluid">
                 <ul class="bot-nav">
                     <li class="horizontal">
                         <a href="./index.html" class="logos-nav"><i class="fa-solid fa-house"></i></a>
@@ -76,21 +72,21 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <!-- buacador y carrito -->
-            <div id="iconos">
-                <div class="bloque-03 col-8">
-    
-                    <div id="buscador">
-                        <input type="text" id="inputSearch" class="qeb" placeholder="¿que estas buscando?">
-                    </div>
-                    <div class="carrito col-4">
-                        <i class="fa-solid fa-cart-shopping">Carrito</i>
-                        <input type="text" id="inputSearch" placeholder="0" class="cero">
-                    </div>
-                </div>
+        <div class="container text-center">
+        
+            <div id="iconos" class="row">
+              <div class="bloque-03 col">
+                <input type="text" id="inputSearch" class="qeb" placeholder="¿que estas buscando?">
+              </div>
+              <div class="col-md-auto">
+                
+              </div>
+              <div class="carrito col col-lg-2">
+                <i class="fa-solid fa-cart-shopping">Carrito</i>
+                            <input type="text" id="inputSearch" placeholder="0" class="cero">
+              </div>
             </div>
-        </div>
+          </div>
         <!-- inicio nav -->
         <nav class="row">
             <!-- botones -->
@@ -118,8 +114,8 @@
                 </ul>
             </div>
             <!-- hamburgesa -->
-            <div class="navbar bg-light col-1">
-                <div class="container-fluid">
+            <div class="navbar bg-light col-1 p-0">
+                <div class="container-fluid ham">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

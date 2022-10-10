@@ -1,7 +1,7 @@
 /*header*/
 header {
     background-color: #ECECEC;
-    
+
 
 }
 
@@ -53,21 +53,7 @@ nav {
 
 }
 
-.logo-tres{
-    color: #E6AF2E;
-    font-weight: bolder;
-    font-size: 5rem;
-    font-family: "Bangers";
-    text-align: justify;
-    margin: 1rem 0 1rem 0;
-    text-align: center;
-    /*transform: translate(180px, -10px);
-    position: absolute;
-    animation-name: rotacion-logo;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;*/
 
-}
 
 @keyframes rotacion-logo {
 
@@ -104,9 +90,20 @@ nav {
     justify-content: flex-end;
 }
 
+nav.row {
+    background-color: #ECECEC;
+}
+
 /*hamburguesa*/
+
+div.container-fluid.ham {
+    max-width: 0px;
+    max-height: 0px;
+}
+
 .navbar.bg-light {
     background-color: #ECECEC;
+
 }
 
 .btn-close {
@@ -114,6 +111,7 @@ nav {
 }
 
 .navbar {
+
     font-family: Kalam;
     font-size: 2rem;
     color: #E6AF2E;
@@ -128,6 +126,7 @@ nav {
 
 .navbar-toggler {
     background-color: #E6AF2E;
+    transform: translateY(-60px);
 }
 
 .navbar-toggler-icon {
@@ -151,7 +150,7 @@ nav {
     font-family: Kalam;
     font-size: 2rem;
     cursor: pointer;
-    /*margin-right: 15px;*/
+
     text-align: right;
 
 
@@ -168,7 +167,7 @@ nav {
 
 }
 
-.butt.container-fluid{
+.butt.container-fluid {
     margin-top: 2rem;
 }
 
@@ -240,7 +239,7 @@ a {
     width: 800px;
     height: 1000px;
     /*z-index: 1;*/
-    
+
 
 }
 
@@ -427,6 +426,18 @@ h2.predominante.bloques {
 
 /*html contactenos*/
 
+.logo-tres {
+    color: #E6AF2E;
+    font-weight: bolder;
+    font-size: 5rem;
+    font-family: "Bangers";
+    text-align: justify;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+
+
+}
+
 .fou {
     display: flex;
     flex-direction: row;
@@ -588,24 +599,31 @@ h2.predominante.bloques {
 .prod09 {
     grid-area: prod09;
 }
+
 .prod10 {
     grid-area: prod10;
 }
+
 .prod11 {
     grid-area: prod11;
 }
+
 .prod12 {
     grid-area: prod12;
 }
+
 .prod13 {
     grid-area: prod13;
 }
+
 .prod14 {
     grid-area: prod14;
 }
+
 .prod15 {
     grid-area: prod15;
 }
+
 .prod16 {
     grid-area: prod16;
 }
@@ -717,7 +735,7 @@ h2.predominante.bloques {
 
     /*paginas secundarias*/
 
-    .productos{
+    .productos {
         grid-template-areas:
             "prod01 prod02 prod03"
             "prod04 prod05 prod06"
@@ -725,7 +743,7 @@ h2.predominante.bloques {
             "prod10 prod11 prod12"
             "prod13 prod14 prod15"
             "prod16 . ."
-            
+
         ;
     }
 
@@ -782,6 +800,36 @@ h2.predominante.bloques {
         top: -9999px;
     }
 
+    div.carrito {
+        max-width: 10rem;
+
+
+    }
+
+    .imagen-logo {
+        max-width: 10rem;
+        max-height: 15rem;
+        transform: translate(-20px, -50px);
+    }
+
+    .logo {
+        font-size: 3rem;
+        transform: translate(120px, 20px);
+        
+
+
+    }
+
+    @keyframes rotacion-logo {
+
+        from {
+            transform: rotateZ(0deg) translate(300px, -30px);
+        }
+    
+        to {
+            transform: rotateZ(360deg) translate(120px, 20px);
+        }
+    }
     /*contactenos*/
 
     #encabezado-contacto {
@@ -892,57 +940,64 @@ h2.predominante.bloques {
     .productos {
         /* grid-template-rows: 1fr 1fr; */
         grid-template-areas:
-                "prod01 prod02"
-                "prod03 prod04"
-                "prod05 prod06"
-                "prod07 prod08"
-                "prod09 prod10"
-                "prod11 prod12"
-                "prod13 prod14"
-                "prod15 prod16"
-            ;
+            "prod01 prod02"
+            "prod03 prod04"
+            "prod05 prod06"
+            "prod07 prod08"
+            "prod09 prod10"
+            "prod11 prod12"
+            "prod13 prod14"
+            "prod15 prod16"
+        ;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 2rem;
         grid-column-gap: 30px;
 
     }
+
     .centrar {
         margin-bottom: 2rem;
         width: 20rem;
         height: 30rem;
     }
+
     .recuadro-prod {
         max-width: 15rem;
         max-height: 15rem;
-        
+
     }
 }
 
-@media screen and (max-width: 700px){
-        
-    .productos{
-        grid-template-areas: 
-        "prod01"
-        "prod02"
-        "prod03"
-        "prod04"
-        "prod05"
-        "prod06"
-        "prod07"
-        "prod08"
-        "prod09"
-        "prod10"
-        "prod11"
-        "prod12"
-        "prod13"
-        "prod14"
-        "prod15"
-        "prod16"
+@media screen and (max-width: 700px) {
+
+    .productos {
+        grid-template-areas:
+            "prod01"
+            "prod02"
+            "prod03"
+            "prod04"
+            "prod05"
+            "prod06"
+            "prod07"
+            "prod08"
+            "prod09"
+            "prod10"
+            "prod11"
+            "prod12"
+            "prod13"
+            "prod14"
+            "prod15"
+            "prod16"
         ;
     }
 
+    .container-md.p-3 {
 
-    ;
+        width: 300px;
+        height: 500px
+    }
+
+
 }
 
 @media screen and (max-width: 425px) {
@@ -963,15 +1018,13 @@ h2.predominante.bloques {
     }
 
     .imagen-logo {
-        max-width: 10rem;
-        max-height: 15rem;
         transform: translate(-20px, -20px);
     }
 
     .logo {
 
         font-size: 3rem;
-        
+
         text-align: justify;
         margin: 1rem 0 1rem 0;
         transform: translate(-40px, 60px);
@@ -1060,4 +1113,3 @@ h2.predominante.bloques {
 
 
 }
-

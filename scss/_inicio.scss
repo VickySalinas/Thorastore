@@ -1,0 +1,132 @@
+.titulos-01 {
+    color: $texto;
+    font-family: $fuente-gral;
+    border-bottom: $subrayado;
+
+    @include tipografia(3rem, center, none);
+}
+
+
+.titulos-02 {
+    color: $texto;
+    font-family: $fuente-gral;
+
+    @include tipografia(2rem, right, double);
+}
+
+.titulos-03 {
+    color: $texto;
+    font-family: $fuente-gral;
+
+    @include tipografia(2rem, right, double);
+}
+
+.titulos-04 {
+    color: $texto;
+    font-family: $fuente-gral;
+
+    @include tipografia(1rem, auto, none);
+
+}
+
+
+main {
+    .container-md.p-3 {
+
+        padding: 1rem;
+        width: 600px;
+        height: 550px;
+    }
+
+    .carousel-item {
+
+        list-style: none;
+        font-family: $fuente-gral;
+        font-size: 2rem;
+
+    }
+
+    .calecita {
+        background-color: #ECECEC;
+        border: $color-principal 1rem solid;
+        border-radius: 1rem;
+        width: 800px;
+        height: 1000px;
+        cursor: pointer;
+
+
+
+        img {
+            max-height: 400px;
+            aspect-ratio: 1/2;
+            object-fit: scale-down;
+            
+        }
+
+
+    }
+
+    .color {
+        color: $texto;
+        background-color: rgb(238, 225, 197);
+        
+        position: relative;
+
+    }
+
+    
+}
+
+.eventos {
+    @include size(auto, 7rem, 0.5rem);
+}
+
+.map {
+    @include size(8rem, 8rem, 1rem);
+}
+
+.video {
+    @include size(8rem, 8rem, 1rem);
+}
+
+.acordeon {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+
+}
+
+section{
+    height: 100%;
+    .recuadros02 {
+        @extend .recuadros01;
+        width: 32%;
+        
+    }
+    
+}
+
+div{
+.recuadros03{
+    @extend .recuadros01;
+}
+}
+
+div{
+.fotos-instagram{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.fotos-nos{
+    max-width: auto;
+max-height: 20rem;
+border: transparent solid;
+border-radius: 2rem;
+margin: 2rem;
+}
+}

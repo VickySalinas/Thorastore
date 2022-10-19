@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Leer!</title>
+    <title>A Leer! - Thorastore</title>
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- css -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!-- FUENTE H1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,54 +41,52 @@
     <header>
         <!-- botones navegador superior -->
         <div class="row">
-            <div id="iconos" class="container-fluid">
+            <div class="container-fluid">
                 <ul class="bot-nav">
-                    <li class="horizontal">
-                        <a href="../index.html" class="logos-nav"><i class="fa-solid fa-house"></i></a>
+                    <li class="d-flex justify-content-center">
+                        <a href="./index.html" class=""><i class="fa-solid fa-house"></i></a>
                     </li>
 
-                    <li class="horizontal">
-                        <a href="./contacto.html" class="logos-nav"><i class="fa-solid fa-address-book"></i></a>
+                    <li class="d-flex justify-content-center">
+                        <a href="./html/contacto.html" class=""><i class="fa-solid fa-address-book"></i></a>
                     </li>
 
-                    <li class="horizontal">
-                        <a href="#buscador" class="logos-nav"><i class="fa-solid fa-magnifying-glass"
-                                id="icon-search"></i></a>
+                    <li class="d-flex justify-content-center">
+                        <a href="#buscador" class=""><i class="fa-solid fa-magnifying-glass" id="icon-search"></i></a>
 
                     </li>
 
-                    <li class="horizontal">
+                    <li class="d-flex justify-content-center">
                         <a href="#pie"><i class="fa-solid fa-arrow-down"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="row">
+        <div class="d-flex align-items-end row">
             <div class="col-1">
-                <div id="marca">
-                    <div>
-                        <h1 class="logo">Thorastore</h1>
-                    </div>
+                <div>
+                    <h1>Thorastore</h1>
                 </div>
+
                 <div class="col-11">
-                    <img class="imagen-logo" src="../img/logothora-removebg-preview.png" class="img"
+                    <img class="imagen-logo" src="./img/logothora-removebg-preview.png" class="img"
                         alt="logo de thorastore">
                 </div>
             </div>
         </div>
-        <div class="container text-center">
+        <div class="container text-center d-flex justify-content-center ">
 
-            <div id="iconos" class="row">
-                <div class="bloque-03 col">
-                    <input type="text" id="inputSearch" class="qeb" placeholder="¿que estas buscando?">
+            <div class="row">
+                <div class="bloque-03 d-flex align-items-center col">
+                    <input type="text" id="inputSearch" class="busqueda" placeholder="¿que estas buscando?">
                 </div>
                 <div class="col-md-auto">
 
                 </div>
                 <div class="carrito col col-lg-2">
                     <i class="fa-solid fa-cart-shopping">Carrito</i>
-                    <input type="text" id="inputSearch" placeholder="0" class="cero">
+                    <input type="text" id="inputSearch" placeholder="0">
                 </div>
             </div>
         </div>
@@ -97,29 +95,30 @@
             <!-- botones -->
             <div class="butt col-10">
                 <ul class="botones-pag">
-                    <li class="horizontal botones"><a href="./aleer.html">
+                    <li class="recuadros01"><a href="./html/aleer.html">
                             <div>A LEER</div>
                         </a></li>
 
-                    <li class="horizontal botones"><a href="./decoleccion.html">
+                    <li class="recuadros01"><a href="./html/decoleccion.html">
                             <div>DE COLECCION</div>
                         </a></li>
 
-                    <li class="horizontal botones"><a href="./customizate.html">
+                    <li class="recuadros01"><a href="./html/customizate.html">
                             <div>CUSTOMIZATE</div>
                         </a></li>
 
-                    <li class="horizontal botones"><a href="./yummyyummy.html">
+                    <li class="recuadros01"><a href="./html/yummyyummy.html">
                             <div>YUMMY-YUMMY</div>
                         </a></li>
 
-                    <li class="horizontal botones"><a href="./regaleria.html">
+                    <li class="recuadros01"><a href="./html/regaleria.html">
                             <div>REGALERIA</div>
                         </a></li>
                 </ul>
             </div>
             <!-- hamburgesa -->
-            <div class="navbar bg-light col-1 p-0">
+
+            <div class="navbar nav-deco bg-light col-1 p-0">
                 <div class="container-fluid ham">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -136,24 +135,25 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                    <a class="nav-link nav-deco dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         A LEER
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../html/aleer.html">VER TODO</a></li>
+                                        <li><a class="dropdown-item" href="./html/aleer.html">VER TODO</a></li>
                                         <li><a class="dropdown-item" href="#">MANGAS</a></li>
                                         <li><a class="dropdown-item" href="#">COMICS</a></li>
                                         <li><a class="dropdown-item" href="#">LIBROS</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                    <a class="nav-link nav-deco dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         DE COLECCION
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../html/decoleccion.html">VER TODO</a></li>
+                                        <li><a class="dropdown-item" href="./html/decoleccion.html">VER TODO</a>
+                                        </li>
                                         <li><a class="dropdown-item" href="#">FUNKO</a></li>
                                         <li><a class="dropdown-item" href="#">HOT TOYS</a></li>
                                         <li>
@@ -163,24 +163,25 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                    <a class="nav-link nav-deco dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         CUSTOMIZATE
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../html/customizate.html">VER TODO</a></li>
+                                        <li><a class="dropdown-item" href="./html/customizate.html">VER TODO</a>
+                                        </li>
                                         <li><a class="dropdown-item" href="#">DISFRACES</a></li>
                                         <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
                                         <li><a class="dropdown-item" href="#">MEDIAS Y PIJAMAS</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                    <a class="nav-link nav-deco dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         YUMMY-YUMMY
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../html/yummyyummy.html">VER TODO</a></li>
+                                        <li><a class="dropdown-item" href="./html/yummyyummy.html">VER TODO</a></li>
                                         <li><a class="dropdown-item" href="#">BEBIDAS</a></li>
                                         <li><a class="dropdown-item" href="#">PARA PICAR</a></li>
                                         <li>
@@ -190,12 +191,12 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                    <a class="nav-link nav-deco dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         REGALERIA
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../html/regaleria.html">VER TODO</a></li>
+                                        <li><a class="dropdown-item" href="./html/regaleria.html">VER TODO</a></li>
                                         <li><a class="dropdown-item" href="#">TAZAS</a></li>
                                         <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
 
@@ -209,6 +210,7 @@
                     </div>
                 </div>
             </div>
+
         </nav>
 
     </header>
@@ -345,59 +347,60 @@
 
 
     <!-- pie de pagina -->
-    <footer class="pie">
-        <div class="container-fluid">
-            <i class="fa-solid fa-envelope">newsletter</i>
-        </div>
-        <div class="row">
+   <!-- pie de pagina -->
+   <footer id="pie">
+    <div class="container-fluid">
+        <i class="fa-solid fa-envelope">newsletter</i>
+    </div>
+    <div class="row">
 
-            <div class="redes col-3">
+        <div class="redes col-3">
+            <div>
                 <div>
                     <div>
-                        <div>
-                            <label for="email" class="let-foot">Email:</label>
-                            <input type="text" name="email" class="foot">
-                        </div>
-                        <div>
-                            <label for="" class="let-foot">Terminos y Condiciones</label>
-                            <input type="checkbox" name="" value="">
-                        </div>
-                        <div>
-                            <input type="submit" value="enviar" class="color-predominante">
-                        </div>
+                        <label for="email" class="let-foot">Email:</label>
+                        <input type="text" name="email" class="foot">
                     </div>
-
-                </div>
-            </div>
-
-            <div class="col-6">
-
-            </div>
-
-            <div class="redes col-3">
-                <div class="row">
-                    <div class="col">
-                        <a href="https://www.facebook.com/vicky.salinas3" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
+                    <div>
+                        <label for="" class="let-foot">Terminos y Condiciones</label>
+                        <input type="checkbox" name="" value="">
                     </div>
-                    <div class="col">
-                        <a href="https://www.instagram.com/lathora15/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="col">
-                        <a href="https://twitter.com/pequepony15" target="_blank"><i
-                                class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <div class="col">
-                        <a href="https://wa.me/01159037114?text=¡Estoy+interesado!" target="_blank"><i
-                                class="fa-brands fa-whatsapp"></i></a>
+                    <div>
+                        <input type="submit" value="enviar" class="boton-enviar">
                     </div>
                 </div>
 
             </div>
         </div>
 
-    </footer>
+        <div class="col-6">
+
+        </div>
+
+        <div class="redes col-3">
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.facebook.com/vicky.salinas3" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/lathora15/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="col">
+                    <a href="https://twitter.com/pequepony15" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="col">
+                    <a href="https://wa.me/01159037114?text=¡Estoy+interesado!" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

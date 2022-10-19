@@ -1,0 +1,159 @@
+header {
+    font-family: kalam;
+    color: $texto;
+    background-color: $color-fondo;
+
+    h1 {
+        color: #E6AF2E;
+        font-weight: bolder;
+        font-size: 5rem;
+        font-family: $fuente-logo;
+        text-align: justify;
+        margin: 1rem 0 1rem 0;
+        transform: translate(180px, -10px);
+        position: absolute;
+        animation-name: rotacion-logo;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    div {
+        .imagen-logo {
+            max-width: 15rem;
+            max-height: 20rem;
+            transform: translate(-30px, -100px);
+
+        }
+    }
+
+    div {
+        ul {
+            display: inline-block;
+            list-style: none;            
+            padding: 1rem 3rem 1rem 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 2rem;
+
+            
+        }
+    }
+
+}
+
+.bot-nav{
+    border-bottom: $subrayado;
+    margin-left: auto;
+    width: 15rem;
+    
+}
+a {
+    text-decoration: none;
+}
+
+nav {
+    ul {
+        color: $texto;
+        font-family: $fuente-gral;
+        font-size: 2rem;
+        cursor: pointer;
+        text-align: right;
+
+        
+    }
+}
+
+
+
+@keyframes rotacion-logo {
+
+    from {
+        transform: rotateZ(0deg) translate(300px, -30px);
+    }
+
+    to {
+        transform: rotateZ(360deg) translate(180px, -10px);
+    }
+
+
+}
+
+div {
+
+    .carrito {
+        background-color: rgb(238, 225, 197);
+        border: $color-principal solid;
+        border-radius: 3rem;
+        padding: 1rem;
+        margin: 1rem;
+        width: 15rem;
+
+        #inputSearch {
+            border: none;
+            padding-left: 1rem;
+            width: 5rem;
+            background-color: rgb(238, 225, 197);
+        }
+    }
+
+    .busqueda {
+        width: 30rem;
+        margin: 0 2rem 0 0;
+        border-radius: 3rem;
+        border: #E6AF2E 3px solid;
+        background-color: rgb(238, 225, 197);
+    }
+}
+
+/*hamburguesa*/
+
+.navbar {
+    visibility: hidden;
+
+}
+
+div {
+    
+
+    .nav-deco {
+        font-family: $fuente-gral;
+        font-size: 2rem;
+        color: $color-principal;
+
+    }
+
+    .bg-light {
+        background-color: $color-fondo;
+
+    }
+
+    .btn-close {
+        background-color: $color-principal;
+    }
+
+
+    .navbar-toggler {
+        background-color: $color-principal;
+        transform: translateY(-60px);
+    }
+
+    .navbar-toggler-icon {
+        background-color: #D75281;
+    }
+
+    .offcanvas-header {
+        background-color: $color-fondo;
+    }
+
+    .dropdown-menu {
+        border: $border;
+        background: linear-gradient($degrade);
+    }
+
+    .container-fluid.ham {
+        max-width: 0px;
+        max-height: 0px;
+    }
+}
+

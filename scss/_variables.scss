@@ -1,0 +1,28 @@
+$degrade: (#D75281, #E6AF2E);
+$fuente-gral: kalam;
+$fuente-logo: Bangers;
+$texto: #282F44;
+$border: solid #d75281;
+$color-fondo: #ececec;
+$color-principal: #E6AF2E;
+$subrayado: #E6AF2E solid;
+
+@mixin tipografia ($font-size, $text-align, $text-decoration){
+    font-size: $font-size;
+    text-align: $text-align;
+    text-decoration: $text-decoration;
+}
+
+@mixin size ($max-width, $max-height, $padding){
+    max-width: $max-width;
+    max-height: $max-height;
+    padding: $padding;
+}
+
+.recuadros01 {
+    background: linear-gradient($degrade);
+    font-family: $fuente-gral;
+    border-radius: 2rem;
+    border: $border;
+    padding: 5px;
+}

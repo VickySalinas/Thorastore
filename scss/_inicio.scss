@@ -3,7 +3,7 @@
     font-family: $fuente-gral;
     border-bottom: $subrayado;
 
-    @include tipografia(3rem, center, none);
+    @include tipografia(3rem, center);
 }
 
 
@@ -11,21 +11,22 @@
     color: $texto;
     font-family: $fuente-gral;
 
-    @include tipografia(2rem, right, double);
+    @include tipografia(2rem, left);
 }
 
 .titulos-03 {
     color: $texto;
     font-family: $fuente-gral;
 
-    @include tipografia(2rem, right, double);
+
+    @include tipografia(2rem, left);
 }
 
 .titulos-04 {
     color: $texto;
     font-family: $fuente-gral;
 
-    @include tipografia(1rem, auto, none);
+    @include tipografia(1rem, center);
 
 }
 
@@ -60,7 +61,7 @@ main {
             max-height: 400px;
             aspect-ratio: 1/2;
             object-fit: scale-down;
-            
+
         }
 
 
@@ -68,25 +69,35 @@ main {
 
     .color {
         color: $texto;
-        background-color: rgb(238, 225, 197);
-        
+        background-color: rgba(238, 225, 197, 0.7);
+
         position: relative;
 
     }
 
+    .agrupacion-recuadros {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 2rem;
+    }
+
+}
+
+div{
     
-}
+    .eventos {
+        @include size(auto, 7rem, 0.5rem);
+    }
 
-.eventos {
-    @include size(auto, 7rem, 0.5rem);
-}
+    .map {
+        @include size(8rem, 8rem, 1rem);
+    }
 
-.map {
-    @include size(8rem, 8rem, 1rem);
-}
-
-.video {
-    @include size(8rem, 8rem, 1rem);
+    .video {
+        @include size(8rem, 8rem, 1rem);
+    }
 }
 
 .acordeon {
@@ -96,37 +107,181 @@ main {
 
 }
 
-section{
-    height: 100%;
+section {
+    /*height: 100%;*/
+
     .recuadros02 {
         @extend .recuadros01;
         width: 32%;
-        
+
     }
+
+    .recuadros04 {
+        @extend .recuadros01;
+        width: 25%;
+        height: 60%;
+        margin: 1rem;
+    }
+}
+
+div {
+    .recuadros03 {
+        @extend .recuadros01;
+    }
+
+    .fotos-instagram {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+
+    .fotos-nos {
+        max-width: auto;
+        max-height: 20rem;
+        border: transparent solid;
+        border-radius: 2rem;
+        margin: 2rem;
+    }
+
+    .lista-productos {
+        list-style: none;
+    }
+
+    .descripcion-producto {
+        color: $texto;
+        font-family: $fuente-gral;
+        font-size: 1rem;
+    }
+
     
-}
-
-div{
-.recuadros03{
-    @extend .recuadros01;
-}
-}
-
-div{
-.fotos-instagram{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+    
+    
 
 }
 
-.fotos-nos{
-    max-width: auto;
-max-height: 20rem;
-border: transparent solid;
-border-radius: 2rem;
-margin: 2rem;
+section {
+    
+    .productos-img {
+        max-width: 15rem;
+        max-height: 15rem;
+        margin: 2rem;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        cursor: pointer;
+        border: transparent solid;
+        border-radius: 1rem;
+        transform: translateX(8px);
+
+
+    }
+    .distrib-elementos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        border: $border;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        width: 20rem;
+        height: 30rem;
+    }
 }
+
+.productos-img:hover {
+    transform: scale(1);
+
+}
+
+
+main{
+
+    
+
+    .productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "prod01 prod02 prod03 prod04"
+            "prod05 prod06 prod07 prod08"
+            "prod09 prod10 prod11 prod12"
+            "prod13 prod14 prod15 prod16"
+        ;
+        grid-column-gap: 5px;
+        grid-row-gap: 1rem;
+
+
+    }
+
+    .prod01 {
+        grid-area: prod01;
+    }
+
+    .prod02 {
+        grid-area: prod02;
+    }
+
+    .prod03 {
+        grid-area: prod03;
+    }
+
+    .prod04 {
+        grid-area: prod04;
+    }
+
+    .prod05 {
+        grid-area: prod05;
+    }
+
+    .prod06 {
+        grid-area: prod06;
+    }
+
+    .prod07 {
+        grid-area: prod07;
+    }
+
+    .prod08 {
+        grid-area: prod08;
+    }
+
+    .prod09 {
+        grid-area: prod09;
+    }
+
+    .prod10 {
+        grid-area: prod10;
+    }
+
+    .prod11 {
+        grid-area: prod11;
+    }
+
+    .prod12 {
+        grid-area: prod12;
+    }
+
+    .prod13 {
+        grid-area: prod13;
+    }
+
+    .prod14 {
+        grid-area: prod14;
+    }
+
+    .prod15 {
+        grid-area: prod15;
+    }
+
+    .prod16 {
+        grid-area: prod16;
+    }
 }

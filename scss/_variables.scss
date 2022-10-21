@@ -7,10 +7,10 @@ $color-fondo: #ececec;
 $color-principal: #E6AF2E;
 $subrayado: #E6AF2E solid;
 
-@mixin tipografia ($font-size, $text-align, $text-decoration){
+@mixin tipografia ($font-size, $text-align){
     font-size: $font-size;
     text-align: $text-align;
-    text-decoration: $text-decoration;
+    
 }
 
 @mixin size ($max-width, $max-height, $padding){
@@ -19,6 +19,8 @@ $subrayado: #E6AF2E solid;
     padding: $padding;
 }
 
+
+
 .recuadros01 {
     background: linear-gradient($degrade);
     font-family: $fuente-gral;
@@ -26,3 +28,4 @@ $subrayado: #E6AF2E solid;
     border: $border;
     padding: 5px;
 }
+

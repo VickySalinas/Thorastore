@@ -11,7 +11,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- css -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../scss/styles.css">
 
     <!-- FUENTE H1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
     <header>
         <nav class="row">
             <div class="bot-nav col">
-                <h1 class="logo-dos">Thorastore</h1>
+                <h2 class="logo-pequeño">Thorastore</h2>
             </div>
             <div class="bot-nav col">
                 <a href="../index.html" class="logos-nav"><i class="fa-solid fa-house"></i></a>
@@ -45,45 +45,48 @@
     </header>
 
     <!-- inicio main -->
-    <main class="main">
-        <section class="fbg">
+    <main>
+        <section class="img-fondo">
 
-            <div class="fmi">
-                <h2 id="encabezado-contacto" class="logo-tres">CONTACTENOS:</h2>
-                <article class="form-cont">
+            <div>
+                <h2 id="encabezado-contacto" class="titulo-contacto">CONTACTENOS:</h2>
+                <article class="formulario">
                     <div class="fou">
 
-                        <form class="form-cont-02">
-                            <div class="predominante art">
+                        <form class="recuadros05">
+                            <div>
                                 <label for="nombre_apellido">Nombre y Apellido: </label>
-                                <input type="text" name="nombre_apellido" class="cuadradito">
+                                <input type="text" name="nombre_apellido" class="foot">
                             </div>
 
-                            <div class="predominante art">
+                            <div>
                                 <label for="email">Email:</label>
-                                <input type="text" name="email" class="cuadradito">
+                                <input type="text" name="email" class="foot">
                             </div>
 
-                            <div class="predominante art">
+                            <div>
                                 <label for="mensaje">Mensaje:</label>
-                                <textarea name="" id="" cols="30" rows="10" class="cuadradito"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" class="foot"></textarea>
                             </div>
 
-                            <div class="predominante art">
-                                <label for="" class="predominante">Terminos y Condiciones</label>
+                            <div>
+                                <label for="" class="let-foot">Terminos y Condiciones</label>
                                 <input type="checkbox" name="" value="">
                             </div>
-                            <div>
-                                <input type="submit" value="enviar" class="color-predominante">
+                            <div class="d-flex justify-content-evenly">
+                                <div>
+                                    <input type="submit" value="enviar" class="boton-enviar">
+                                </div>
+                                <div>
+                                    <input type="reset" value="limpiar" class="boton-enviar">
+                                </div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.517543116851!2d-58.37414028409963!3d-34.767744273703734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d2cb4822753%3A0xb00356d30c7eefbf!2sLa%20Calandria%201930%2C%20B1834CEN%20Temperley%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1662776044579!5m2!1ses!2sar"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                            </form>
+
                             </div>
-                            <div>
-                                <input type="reset" value="limpiar" class="color-predominante">
-                            </div>
-                        </form>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.517543116851!2d-58.37414028409963!3d-34.767744273703734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d2cb4822753%3A0xb00356d30c7eefbf!2sLa%20Calandria%201930%2C%20B1834CEN%20Temperley%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1662776044579!5m2!1ses!2sar"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="map contact"></iframe>
 
                     </div>
 
@@ -98,7 +101,7 @@
 
 
     <!-- pie de pagina -->
-    <footer id="pie">
+        <footer class="pie">
         <div class="container-fluid">
             <i class="fa-solid fa-envelope">newsletter</i>
         </div>
@@ -116,7 +119,7 @@
                             <input type="checkbox" name="" value="">
                         </div>
                         <div>
-                            <input type="submit" value="enviar" class="boton-enviar">
+                            <input type="submit" value="enviar" class="color-predominante">
                         </div>
                     </div>
 
@@ -156,5 +159,6 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 </body>
+
 
 </html>

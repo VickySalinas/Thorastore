@@ -1,13 +1,12 @@
 header {
-    font-family: kalam;
+    font-family: $fuente-gral;
     color: $texto;
     background-color: $color-fondo;
 
     h1 {
-        color: #E6AF2E;
-        font-weight: bolder;
-        font-size: 5rem;
+        color: $color-principal;
         font-family: $fuente-logo;
+        font-size: 5rem;
         text-align: justify;
         margin: 1rem 0 1rem 0;
         transform: translate(180px, -10px);
@@ -15,6 +14,15 @@ header {
         animation-name: rotacion-logo;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
+    }
+
+    h2{
+        .logo-pequeño{
+            color: $color-principal;
+            font-family: $fuente-logo;
+            font-size: 2rem;
+        }
+    
     }
 
     div {
@@ -38,6 +46,12 @@ header {
 
             
         }
+    }
+    .logo-pequeño{
+        font-family: $fuente-logo;
+        color: $color-principal;
+        font-size: 2rem;
+        text-align: justify;
     }
 
 }
@@ -156,4 +170,3 @@ div {
         max-height: 0px;
     }
 }
-

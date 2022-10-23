@@ -7,6 +7,9 @@ footer{
         padding-top: 1rem;
         color: $color-principal;
     }
+    
+}
+div{
     .boton-enviar{
         border: $texto solid;
         background-color: $color-principal;
@@ -17,7 +20,7 @@ footer{
         font-family: $fuente-gral;
         font-size: 1rem;
     
-
+    
     }
     .let-foot {
         font-size: 1rem;
@@ -28,5 +31,5 @@ footer{
         border-radius: 2rem;
         background-color: rgb(238, 225, 197);
     }
-    
+
 }

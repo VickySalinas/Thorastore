@@ -31,7 +31,134 @@
 }
 
 
-main {
+div{
+    .recuadros03 {
+        @extend .recuadros01;
+    }
+
+    .fotos-instagram {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+
+    .fotos-nos {
+        max-width: auto;
+        max-height: 20rem;
+        border: transparent solid;
+        border-radius: 2rem;
+        margin: 2rem;
+    }
+
+    .lista-productos {
+        list-style: none;
+    }
+
+    .descripcion-producto {
+        color: $texto;
+        font-family: $fuente-gral;
+        font-size: 1rem;
+    }
+
+    .eventos {
+        @include size(auto, 7rem, 0.5rem);
+    }
+
+    .map {
+        @include size(8rem, 8rem, 1rem);
+    }
+
+    .video {
+        @include size(8rem, 8rem, 1rem);
+    }
+}
+
+.acordeon {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+
+}
+
+section {
+    
+
+    .recuadros02 {
+        @extend .recuadros01;
+        width: 32%;
+
+    }
+
+    .recuadros04 {
+        @extend .recuadros01;
+        width: 25%;
+        height: 60%;
+        margin: 1rem;
+    }
+
+    
+
+    .recuadros05 {
+        @extend .recuadros01;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .productos-img {
+        max-width: 15rem;
+        max-height: 15rem;
+        margin: 2rem;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        cursor: pointer;
+        border: transparent solid;
+        border-radius: 1rem;
+        transform: translateX(8px);
+
+
+    }
+    .distrib-elementos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        border: $border;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        width: 20rem;
+        height: 30rem;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem 2rem 2rem 3rem;
+    }  
+
+    
+    
+    
+    
+
+}
+
+
+.productos-img:hover {
+    transform: scale(2);
+
+}
+
+
+main{
     .container-md.p-3 {
 
         padding: 1rem;
@@ -82,124 +209,15 @@ main {
         flex-wrap: nowrap;
         padding-left: 2rem;
     }
-
-}
-
-div{
     
-    .eventos {
-        @include size(auto, 7rem, 0.5rem);
+    .img-fondo{
+        background-image: url(../img/logothora-removebg-preview.png);
+resize: both;
+overflow: auto;
+background-repeat: space;
+background-position: center;
+background-size: 30rem 40rem;
     }
-
-    .map {
-        @include size(8rem, 8rem, 1rem);
-    }
-
-    .video {
-        @include size(8rem, 8rem, 1rem);
-    }
-}
-
-.acordeon {
-    visibility: hidden;
-    position: absolute;
-    top: -9999px;
-
-}
-
-section {
-    /*height: 100%;*/
-
-    .recuadros02 {
-        @extend .recuadros01;
-        width: 32%;
-
-    }
-
-    .recuadros04 {
-        @extend .recuadros01;
-        width: 25%;
-        height: 60%;
-        margin: 1rem;
-    }
-}
-
-div {
-    .recuadros03 {
-        @extend .recuadros01;
-    }
-
-    .fotos-instagram {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-
-    }
-
-    .fotos-nos {
-        max-width: auto;
-        max-height: 20rem;
-        border: transparent solid;
-        border-radius: 2rem;
-        margin: 2rem;
-    }
-
-    .lista-productos {
-        list-style: none;
-    }
-
-    .descripcion-producto {
-        color: $texto;
-        font-family: $fuente-gral;
-        font-size: 1rem;
-    }
-
-    
-    
-    
-
-}
-
-section {
-    
-    .productos-img {
-        max-width: 15rem;
-        max-height: 15rem;
-        margin: 2rem;
-        transition-duration: 1s;
-        transition-timing-function: ease-in-out;
-        cursor: pointer;
-        border: transparent solid;
-        border-radius: 1rem;
-        transform: translateX(8px);
-
-
-    }
-    .distrib-elementos {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        border: $border;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-        width: 20rem;
-        height: 30rem;
-    }
-}
-
-.productos-img:hover {
-    transform: scale(1);
-
-}
-
-
-main{
-
-    
 
     .productos {
         display: flex;
@@ -284,4 +302,15 @@ main{
     .prod16 {
         grid-area: prod16;
     }
+
+    .titulo-contacto{
+        color: $color-principal;
+font-weight: bolder;
+font-size: 5rem;
+font-family: $fuente-logo;
+text-align: justify;
+margin: 1rem 0 1rem 0;
+text-align: center;
+    }
 }
+

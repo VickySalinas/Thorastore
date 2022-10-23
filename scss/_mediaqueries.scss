@@ -1,13 +1,5 @@
 @media screen and (max-width: 1600px) {
 
-    /*pagina principal*/
-
-    /*.bloques-de-art {
-
-        flex-direction: column;
-
-    }*/
-
     .recuadros01 {
         border-radius: 20px;
     
@@ -25,13 +17,18 @@ nav{
     }
 }
 
+main{
+    .productos {
+        grid-template-areas:
+            "prod01 prod02 prod03"
+            "prod04 prod05 prod06"
+            "prod07 prod08 prod09"
+            "prod10 prod11 prod12"
+            "prod13 prod14 prod15"
+            "prod16 . ."
 
-/*
-    .fotos-ind img {
-        max-height: 10rem;
-
+        ;
     }
-*/
 
 div{
     .eventos {
@@ -54,7 +51,7 @@ div{
         border-radius: 2rem;
     }
 }
-    /*contactenos*/
+
 h2{
     .logo-pequeño {
         width: 30%;
@@ -62,44 +59,35 @@ h2{
 
 }
 
-    /*paginas secundarias*/
-    main{
-        .productos {
-            grid-template-areas:
-                "prod01 prod02 prod03"
-                "prod04 prod05 prod06"
-                "prod07 prod08 prod09"
-                "prod10 prod11 prod12"
-                "prod13 prod14 prod15"
-                "prod16 . ."
     
-            ;
+
+    }
+    section{
+
+        .distrib-elementos {
+            width: 15rem;
+            height: 23rem;
         }
-
+        .productos-img {
+            max-width: 10rem;
+            max-height: 10rem;
+            margin: 2rem;
+            cursor: pointer;
+            border: transparent solid;
+            border-radius: 1rem;
+    
+    
+        }
+    
+        .descripcion-producto {
+            color: #282F44;
+            font-family: Kalam;
+            font-size: 0.9rem;
+        }
     }
 
-    .distrib-elementos {
-        width: 15rem;
-        height: 23rem;
-    }
 
 
-    .productos-img {
-        max-width: 10rem;
-        max-height: 10rem;
-        margin: 2rem;
-        cursor: pointer;
-        border: transparent solid;
-        border-radius: 1rem;
-
-
-    }
-
-    .descripcion-producto {
-        color: #282F44;
-        font-family: Kalam;
-        font-size: 0.9rem;
-    }
 
 
 }
@@ -160,15 +148,13 @@ h2{
         transform: translate(-20px, -50px);
     }
 
-    
-}
-
-div{
     .eventos {
         @include size(auto, 8rem, 0.5rem);
         
     }
+    
 }
+
 
 .acordeon {
     visibility: visible;
@@ -232,27 +218,14 @@ section{
         }
     }
 
-    /*contactenos*/
-
     #encabezado-contacto {
         margin: 0;
         transform: translateX(5px);
 
     }
 
-    /*paginas secundarias*/
-
-
-
 
 }
-
-
-
-
-
-
-
 
 
 @media screen and (max-width:768px) {
@@ -279,106 +252,112 @@ section{
         }
     }
 
-    .distrib-elementos {
-        margin-bottom: 2rem;
-        width: 20rem;
-        height: 30rem;
+    
+    section{
+        .distrib-elementos {
+            margin-bottom: 2rem;
+            width: 20rem;
+            height: 30rem;
+        }
+        .productos-img {
+            max-width: 15rem;
+            max-height: 15rem;
+    
+        }
+
     }
 
-    .productos-img {
-        max-width: 15rem;
-        max-height: 15rem;
-
-    }
 }
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 700px) {
-main{
-    .productos {
-        grid-template-areas:
-            "prod01"
-            "prod02"
-            "prod03"
-            "prod04"
-            "prod05"
-            "prod06"
-            "prod07"
-            "prod08"
-            "prod09"
-            "prod10"
-            "prod11"
-            "prod12"
-            "prod13"
-            "prod14"
-            "prod15"
-            "prod16"
-        ;
+    main{
+        .productos {
+            grid-template-areas:
+                "prod01"
+                "prod02"
+                "prod03"
+                "prod04"
+                "prod05"
+                "prod06"
+                "prod07"
+                "prod08"
+                "prod09"
+                "prod10"
+                "prod11"
+                "prod12"
+                "prod13"
+                "prod14"
+                "prod15"
+                "prod16"
+            ;
+        }
+    
+        .container-md.p-3.calecita {
+        
+            width: 300px;
+            height: 500px
+        }
     }
 
-}
-
-    .container-md.p-3 {
-
-        width: 300px;
-        height: 500px
+    div{
+                h1{
+            transform: translate(90px, -20px);
+        }
+        .imagen-logo {
+            width: auto;
+            height: 10rem;
+            transform: translate(-20px, -20px);
+        }
     }
+
+    @keyframes rotacion-logo {
+
+        from {
+            transform: rotateZ(0deg) translate(200px, -20px);
+        }
+    
+        to {
+            transform: rotateZ(360deg) translate(90px, -20px);
+        }
+    
+    
+    }
+
 
 
 }
 
 @media screen and (max-width: 425px) {
 
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
+    main{
+        .titulos-01 {
+    
+            @include tipografia(2rem, center);
+    
+        }
+        
     }
-
-    /*pagina principal*/
-
-    #iconos {
-        justify-content: center;
-        align-content: center;
-        transform: translateX(-4 0px);
+    footer{
+        .foot {
+            width: 200px;
+        }
     }
-
-    .imagen-logo {
-        transform: translate(-20px, -20px);
-    }
-
-    .logo {
-
-        font-size: 3rem;
-
-        text-align: justify;
-        margin: 1rem 0 1rem 0;
-        transform: translate(-40px, 60px);
-    }
-
-    .bloque-03 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .qeb {
+div{
+    
+    .busqueda {
         margin: 0 2rem 1rem 2rem;
     }
-
     .carrito {
         margin: 0 1rem 0 1rem;
-
+    
+    }
+    .titulos-04{
+        @include tipografia(1rem, center);
+    }
+    .eventos {
+        @include size(auto, 6rem, 0.5rem);
+        
+    }
     }
 
     .navbar {
@@ -391,54 +370,11 @@ main{
         top: -9999px;
     }
 
-    .foot {
-        width: 5px;
-    }
 
-    /*bloque de eventos*/
-
-    h2
-    .titulos-01 {
-
-        font-size: 2rem;
-
-    }
-
-    .titulos-02 {
-        font-size: 1rem;
-
-
-    }
-
-    .titulos-03 {
-        font-size: 1rem;
-    }
-
-    .tit-ev {
-        padding: 1rem 0 1rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .info-evento {
-        padding: 0rem 1rem 0rem 1rem;
-        margin-right: 0;
-        font-size: 1rem;
-        font-family: "kalam";
-        text-align: center;
-
-    }
+    
 
 
 
-    /*nosotros*/
-
-    .familia {
-        max-height: 5rem;
-    }
-
-    /*footer*/
 
 
 }

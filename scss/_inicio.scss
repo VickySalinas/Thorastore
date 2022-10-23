@@ -1,10 +1,4 @@
-.titulos-01 {
-    color: $texto;
-    font-family: $fuente-gral;
-    border-bottom: $subrayado;
 
-    @include tipografia(3rem, center);
-}
 
     .titulo-02 {
         color: $texto;
@@ -24,15 +18,15 @@ div{
         @include tipografia(2rem, left);
     }
 
+    .titulos-04 {
+        color: $texto;
+        font-family: $fuente-gral;
+    
+        @include tipografia(1rem, center);
+    
+    }
 }
 
-.titulos-04 {
-    color: $texto;
-    font-family: $fuente-gral;
-
-    @include tipografia(1rem, center);
-
-}
 
 
 div{
@@ -77,6 +71,10 @@ div{
 
     .video {
         @include size(8rem, 8rem, 1rem);
+    }
+
+    .accordion-body{
+        background-color: $color-fondo;
     }
 }
 
@@ -158,7 +156,18 @@ section {
 
 }
 
+.accordion-button{
+    background: linear-gradient($degrade);
+}
+
 main{
+    .titulos-01 {
+        color: $texto;
+        font-family: $fuente-gral;
+        border-bottom: $subrayado;
+    
+        @include tipografia(3rem, center);
+    }
     .container-md.p-3 {
 
         padding: 1rem;

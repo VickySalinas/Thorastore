@@ -35,7 +35,7 @@ div{
         @include size(auto, 4rem, 0.5rem);
     }
     .busqueda {
-        width: 20rem;
+        width: $tamaño*2;
 
     }
     .recuadros02 {
@@ -65,8 +65,8 @@ h2{
     section{
 
         .distrib-elementos {
-            width: 15rem;
-            height: 23rem;
+            width: $tamaño+5;
+            height: ($tamaño*2)+3;
         }
         .productos-img {
             max-width: 10rem;
@@ -132,7 +132,7 @@ h2{
     }
 
     .carrito {
-        max-width: 10rem;
+        max-width: $tamaño;
 
 
     }
@@ -143,8 +143,8 @@ h2{
     }
 
     .imagen-logo {
-        max-width: 10rem;
-        max-height: 15rem;
+        max-width: $tamaño;
+        max-height: $tamaño+5;
         transform: translate(-20px, -50px);
     }
 
@@ -256,12 +256,12 @@ section{
     section{
         .distrib-elementos {
             margin-bottom: 2rem;
-            width: 20rem;
-            height: 30rem;
+            width: $tamaño*2;
+            height: $tamaño*3;
         }
         .productos-img {
-            max-width: 15rem;
-            max-height: 15rem;
+            max-width: $tamaño+5;
+            max-height: $tamaño+5;
     
         }
 
@@ -305,7 +305,7 @@ section{
         }
         .imagen-logo {
             width: auto;
-            height: 10rem;
+            height: $tamaño;
             transform: translate(-20px, -20px);
         }
     }

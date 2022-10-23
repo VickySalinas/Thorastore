@@ -45,7 +45,7 @@ div{
 
     .fotos-nos {
         max-width: auto;
-        max-height: 20rem;
+        max-height: $tamaño*2;
         border: transparent solid;
         border-radius: 2rem;
         margin: 2rem;
@@ -113,15 +113,15 @@ section {
         align-items: flex-end;
     }
     .productos-img {
-        max-width: 15rem;
-        max-height: 15rem;
+        max-width: $tamaño+5;
+        max-height: $tamaño+5;
         margin: 2rem;
         transition-duration: 1s;
         transition-timing-function: ease-in-out;
         cursor: pointer;
         border: transparent solid;
         border-radius: 1rem;
-        /*transform: scale*/
+
         
         
 
@@ -135,8 +135,8 @@ section {
         border: $border;
         border-radius: 1rem;
         margin-bottom: 1rem;
-        width: 20rem;
-        height: 30rem;
+        width: $tamaño*2;
+        height: $tamaño*3;
     }
     .formulario {
         display: flex;

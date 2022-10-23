@@ -236,7 +236,6 @@ section .productos-img {
   cursor: pointer;
   border: transparent solid;
   border-radius: 1rem;
-  /*transform: scale*/
 }
 section .distrib-elementos {
   display: flex;

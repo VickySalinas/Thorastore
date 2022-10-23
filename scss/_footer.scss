@@ -14,7 +14,7 @@ div{
         border: $texto solid;
         background-color: $color-principal;
         border-style: double;
-        width: 5rem;
+        width: $tamaño/2;
         height: 3rem;
         margin: 0.5rem 0 0.5rem 0;
         font-family: $fuente-gral;

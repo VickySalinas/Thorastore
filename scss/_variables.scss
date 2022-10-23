@@ -6,6 +6,8 @@ $border: solid #d75281;
 $color-fondo: #ececec;
 $color-principal: #E6AF2E;
 $subrayado: #E6AF2E solid;
+$tamaño: 10rem;
+
 
 @mixin tipografia ($font-size, $text-align){
     font-size: $font-size;

@@ -33,8 +33,8 @@ header {
             @extend .recuadros00;
         }
         .imagen-logo {
-            max-width: 15rem;
-            max-height: 20rem;
+            max-width: $tamaño+5;
+            max-height: $tamaño*2;
             transform: translate(-30px, -100px);
 
         }
@@ -65,7 +65,7 @@ header {
 .bot-nav{
     border-bottom: $subrayado;
     margin-left: auto;
-    width: 15rem;
+    width: $tamaño+5;
     
 }
 a {
@@ -113,13 +113,13 @@ div {
         #inputSearch {
             border: none;
             padding-left: 1rem;
-            width: 5rem;
+            width: $tamaño/2;
             background-color: rgb(238, 225, 197);
         }
     }
 
     .busqueda {
-        width: 30rem;
+        width: $tamaño*3;
         margin: 0 2rem 0 0;
         border-radius: 3rem;
         border: #E6AF2E 3px solid;

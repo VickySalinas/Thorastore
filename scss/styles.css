@@ -410,4 +410,309 @@ div .foot {
   border: #E6AF2E solid;
   border-radius: 2rem;
   background-color: rgb(238, 225, 197);
+}
+
+@media screen and (max-width: 1600px) {
+  /*pagina principal*/
+  /*.bloques-de-art {
+
+      flex-direction: column;
+
+  }*/
+  .art-01 {
+    align-items: stretch;
+    width: 100%;
+  }
+  .bloque-03 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  #iconos {
+    justify-content: center;
+  }
+  .qeb {
+    width: 20rem;
+  }
+  .botones-pag {
+    font-size: 1rem;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .horizontal.botones {
+    background: linear-gradient(#D75281, #E6AF2E);
+    border: #D75281 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  .fotos-ind img {
+    max-height: 10rem;
+  }
+  .familia {
+    max-height: 8rem;
+    margin: 1rem;
+    border: transparent solid;
+    border-radius: 2rem;
+  }
+  /*contactenos*/
+  .logo.dos {
+    width: 30%;
+  }
+  /*paginas secundarias*/
+  .productos {
+    grid-template-areas: "prod01 prod02 prod03" "prod04 prod05 prod06" "prod07 prod08 prod09" "prod10 prod11 prod12" "prod13 prod14 prod15" "prod16 . .";
+  }
+  .centrar {
+    width: 15rem;
+    height: 23rem;
+  }
+  .recuadro-prod {
+    max-width: 10rem;
+    max-height: 10rem;
+    margin: 2rem;
+    cursor: pointer;
+    border: transparent solid;
+    border-radius: 1rem;
+  }
+  .nom-prec {
+    color: #282F44;
+    font-family: Kalam;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #pie {
+    margin: 0.5rem 0 0 0;
+  }
+  /*pagina principal*/
+  .art-01 {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .bloques-de-art {
+    margin: 0.5rem;
+  }
+  .navbar {
+    visibility: visible;
+  }
+  .butt {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+  }
+  div.carrito {
+    max-width: 10rem;
+  }
+  .imagen-logo {
+    max-width: 10rem;
+    max-height: 15rem;
+    transform: translate(-20px, -50px);
+  }
+  .logo {
+    font-size: 3rem;
+    transform: translate(120px, 20px);
+  }
+  @-webkit-keyframes rotacion-logo {
+    from {
+      transform: rotateZ(0deg) translate(300px, -30px);
+    }
+    to {
+      transform: rotateZ(360deg) translate(120px, 20px);
+    }
+  }
+  @keyframes rotacion-logo {
+    from {
+      transform: rotateZ(0deg) translate(300px, -30px);
+    }
+    to {
+      transform: rotateZ(360deg) translate(120px, 20px);
+    }
+  }
+  /*contactenos*/
+  #encabezado-contacto {
+    margin: 0;
+    transform: translateX(5px);
+  }
+  .form-cont {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .form-cont-02 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .fmi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .fou {
+    flex-direction: column;
+  }
+  /*paginas secundarias*/
+  .centrar {
+    width: 14rem;
+    height: 19rem;
+    margin-bottom: 0.2rem;
+  }
+  .recuadro-prod {
+    max-width: 7rem;
+    max-height: 7rem;
+    margin: 2rem;
+  }
+  .nom-prec {
+    color: #282F44;
+    font-family: Kalam;
+    font-size: 0.7rem;
+  }
+  .productos {
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+  .filtrar {
+    width: 20%;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+  }
+  .listas-01 {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  .tit-fil {
+    font-family: Kalam;
+    font-size: 1rem;
+    color: #282F44;
+  }
+  .botones-pag {
+    font-size: 1rem;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloque-03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productos {
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas: "prod01 prod02" "prod03 prod04" "prod05 prod06" "prod07 prod08" "prod09 prod10" "prod11 prod12" "prod13 prod14" "prod15 prod16";
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 30px;
+  }
+  .centrar {
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 30rem;
+  }
+  .recuadro-prod {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .productos {
+    grid-template-areas: "prod01" "prod02" "prod03" "prod04" "prod05" "prod06" "prod07" "prod08" "prod09" "prod10" "prod11" "prod12" "prod13" "prod14" "prod15" "prod16";
+  }
+  .container-md.p-3 {
+    width: 300px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*pagina principal*/
+  #iconos {
+    justify-content: center;
+    align-content: center;
+    transform: translateX(-4 0px);
+  }
+  .imagen-logo {
+    transform: translate(-20px, -20px);
+  }
+  .logo {
+    font-size: 3rem;
+    text-align: justify;
+    margin: 1rem 0 1rem 0;
+    transform: translate(-40px, 60px);
+  }
+  .bloque-03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .qeb {
+    margin: 0 2rem 1rem 2rem;
+  }
+  .carrito {
+    margin: 0 1rem 0 1rem;
+  }
+  .navbar {
+    visibility: visible;
+  }
+  .butt {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+  }
+  .foot {
+    width: 5px;
+  }
+  /*bloque de eventos*/
+  h2.predominante.bloques {
+    font-size: 2rem;
+  }
+  .predominante.art {
+    font-size: 1rem;
+  }
+  .predominante {
+    font-size: 1rem;
+  }
+  .tit-ev {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .info-evento {
+    padding: 0rem 1rem 0rem 1rem;
+    margin-right: 0;
+    font-size: 1rem;
+    font-family: "kalam";
+    text-align: center;
+  }
+  .acordeon {
+    visibility: visible;
+    position: relative;
+    top: 0;
+  }
+  .bloques-de-art {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+  }
+  /*nosotros*/
+  .familia {
+    max-height: 5rem;
+  }
+  /*footer*/
 }/*# sourceMappingURL=styles.css.map */

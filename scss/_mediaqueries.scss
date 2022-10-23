@@ -35,7 +35,7 @@ nav{
 
 div{
     .eventos {
-        @include size(auto, 2rem, 0.5rem);
+        @include size(auto, 4rem, 0.5rem);
     }
     .busqueda {
         width: 20rem;
@@ -106,6 +106,8 @@ h2{
 
 
 @media screen and (max-width: 1100px) {
+    
+
 
     header{
         h1 {
@@ -115,17 +117,19 @@ h2{
             }
     
     }
+
+    main{
+
+        .productos {
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 0.5rem;
+        }
+    }
     
 
     footer {
         margin: 0.5rem 0 0 0;
     }
-
-
-    .recuadros02 {
-        margin: 0.5rem 0 0.5rem 0;
-    }
-
 
 
     .navbar {
@@ -144,15 +148,28 @@ h2{
 
 
     }
-}
-div{
+    .descripcion-producto {
+        color: #282F44;
+        font-family: Kalam;
+        font-size: 0.7rem;
+    }
+
     .imagen-logo {
         max-width: 10rem;
         max-height: 15rem;
         transform: translate(-20px, -50px);
     }
 
+    
 }
+
+div{
+    .eventos {
+        @include size(auto, 8rem, 0.5rem);
+        
+    }
+}
+
 .acordeon {
     visibility: visible;
     position: relative;
@@ -166,11 +183,43 @@ section{
         top: -9999px;
 
     }   
-    
+    .formulario {
+
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .recuadros05 {
+
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .distrib-elementos {
+        width: 14rem;
+        height: 19rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .productos-img {
+        max-width: 7rem;
+        max-height: 7rem;
+        margin: 2rem;
+
+
+    }
+
+    .recuadros04 {
+        visibility: hidden;
+        position: absolute;
+        left: -9999px;
+    }
 }
     
-
-
 
     @keyframes rotacion-logo {
 
@@ -191,138 +240,70 @@ section{
 
     }
 
-    .form-cont {
-
-        justify-content: center;
-        align-items: flex-start;
-        padding: 1rem 1rem 1rem 1rem;
-    }
-
-    .form-cont-02 {
-
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-end;
-    }
-
-    .fmi {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .fou {
-
-        flex-direction: column;
-
-    }
-
     /*paginas secundarias*/
 
-    .centrar {
-        width: 14rem;
-        height: 19rem;
-        margin-bottom: 0.2rem;
-    }
-
-    .recuadro-prod {
-        max-width: 7rem;
-        max-height: 7rem;
-        margin: 2rem;
 
 
-    }
-
-    .nom-prec {
-        color: #282F44;
-        font-family: Kalam;
-        font-size: 0.7rem;
-    }
-
-    .productos {
-        grid-column-gap: 0.5rem;
-        grid-row-gap: 0.5rem;
-    }
-
-    .filtrar {
-        width: 20%;
-        visibility: hidden;
-        position: absolute;
-        left: -9999px;
-    }
-
-    .listas-01 {
-        text-align: left;
-        font-size: 0.8rem;
-    }
-
-    .tit-fil {
-        font-family: Kalam;
-        font-size: 1rem;
-        color: #282F44;
-    }
-
-    .botones-pag {
-        font-size: 1rem;
-        margin-right: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-
-    }
-
-    .bloque-03 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
 }
 
 
+
+
+
+
+
+
+
 @media screen and (max-width:768px) {
 
-    .productos {
-        /* grid-template-rows: 1fr 1fr; */
-        grid-template-areas:
-            "prod01 prod02"
-            "prod03 prod04"
-            "prod05 prod06"
-            "prod07 prod08"
-            "prod09 prod10"
-            "prod11 prod12"
-            "prod13 prod14"
-            "prod15 prod16"
-        ;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 2rem;
-        grid-column-gap: 30px;
 
+    main{
+
+        .productos {
+    
+            grid-template-areas:
+                "prod01 prod02"
+                "prod03 prod04"
+                "prod05 prod06"
+                "prod07 prod08"
+                "prod09 prod10"
+                "prod11 prod12"
+                "prod13 prod14"
+                "prod15 prod16"
+            ;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 2rem;
+            grid-column-gap: 30px;
+    
+        }
     }
 
-    .centrar {
+    .distrib-elementos {
         margin-bottom: 2rem;
         width: 20rem;
         height: 30rem;
     }
 
-    .recuadro-prod {
+    .productos-img {
         max-width: 15rem;
         max-height: 15rem;
 
     }
 }
 
-@media screen and (max-width: 700px) {
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+main{
     .productos {
         grid-template-areas:
             "prod01"
@@ -343,6 +324,8 @@ section{
             "prod16"
         ;
     }
+
+}
 
     .container-md.p-3 {
 
@@ -414,19 +397,20 @@ section{
 
     /*bloque de eventos*/
 
-    h2.predominante.bloques {
+    h2
+    .titulos-01 {
 
         font-size: 2rem;
 
     }
 
-    .predominante.art {
+    .titulos-02 {
         font-size: 1rem;
 
 
     }
 
-    .predominante {
+    .titulos-03 {
         font-size: 1rem;
     }
 

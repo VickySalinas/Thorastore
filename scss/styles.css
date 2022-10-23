@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.recuadros01, section .recuadros05, section .recuadros04, section .recuadros02, div .recuadros03 {
+.recuadros00, section .recuadros05, section .recuadros04, section .recuadros02, div .recuadros03, header div .recuadros01 {
   background: linear-gradient(#D75281, #E6AF2E);
   font-family: kalam;
   border-radius: 2rem;
@@ -153,14 +153,14 @@ div .container-fluid.ham {
   text-align: center;
 }
 
-.titulos-02 {
+.titulo-02 {
   color: #282F44;
   font-family: kalam;
   font-size: 2rem;
   text-align: left;
 }
 
-.titulos-03 {
+div .titulos-03 {
   color: #282F44;
   font-family: kalam;
   font-size: 2rem;
@@ -221,7 +221,7 @@ section .recuadros02 {
   width: 32%;
 }
 section .recuadros04 {
-  width: 25%;
+  width: 20%;
   height: 60%;
   margin: 1rem;
 }
@@ -419,7 +419,7 @@ div .foot {
       flex-direction: column;
 
   }*/
-  .recuadros01, div .recuadros03, section .recuadros02, section .recuadros04, section .recuadros05 {
+  .recuadros01 {
     border-radius: 20px;
   }
   nav ul {
@@ -437,7 +437,7 @@ div .foot {
   */
   div .eventos {
     max-width: auto;
-    max-height: 2rem;
+    max-height: 4rem;
     padding: 0.5rem;
   }
   div .busqueda {
@@ -484,16 +484,17 @@ div .foot {
     font-size: 3rem;
     transform: translate(180px, 20px);
   }
+  main .productos {
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
   footer {
     margin: 0.5rem 0 0 0;
-  }
-  .recuadros02 {
-    margin: 0.5rem 0 0.5rem 0;
   }
   .navbar {
     visibility: visible;
   }
-  div .recuadros01, div .recuadros03, div section .recuadros02, section div .recuadros02, div section .recuadros04, section div .recuadros04, div section .recuadros05, section div .recuadros05 {
+  div .recuadros01 {
     visibility: hidden;
     position: absolute;
     top: -9999px;
@@ -501,10 +502,20 @@ div .foot {
   div .carrito {
     max-width: 10rem;
   }
+  div .descripcion-producto {
+    color: #282F44;
+    font-family: Kalam;
+    font-size: 0.7rem;
+  }
   div .imagen-logo {
     max-width: 10rem;
     max-height: 15rem;
     transform: translate(-20px, -50px);
+  }
+  div .eventos {
+    max-width: auto;
+    max-height: 8rem;
+    padding: 0.5rem;
   }
   .acordeon {
     visibility: visible;
@@ -515,6 +526,34 @@ div .foot {
     visibility: hidden;
     position: absolute;
     top: -9999px;
+  }
+  section .formulario {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  section .recuadros05 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  section .distrib-elementos {
+    width: 14rem;
+    height: 19rem;
+    margin-bottom: 0.2rem;
+  }
+  section .productos-img {
+    max-width: 7rem;
+    max-height: 7rem;
+    margin: 2rem;
+  }
+  section .recuadros04 {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
   }
   @-webkit-keyframes rotacion-logo {
     from {
@@ -537,99 +576,27 @@ div .foot {
     margin: 0;
     transform: translateX(5px);
   }
-  .form-cont {
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem 1rem 1rem 1rem;
-  }
-  .form-cont-02 {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  .fmi {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .fou {
-    flex-direction: column;
-  }
   /*paginas secundarias*/
-  .centrar {
-    width: 14rem;
-    height: 19rem;
-    margin-bottom: 0.2rem;
-  }
-  .recuadro-prod {
-    max-width: 7rem;
-    max-height: 7rem;
-    margin: 2rem;
-  }
-  .nom-prec {
-    color: #282F44;
-    font-family: Kalam;
-    font-size: 0.7rem;
-  }
-  .productos {
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
-  .filtrar {
-    width: 20%;
-    visibility: hidden;
-    position: absolute;
-    left: -9999px;
-  }
-  .listas-01 {
-    text-align: left;
-    font-size: 0.8rem;
-  }
-  .tit-fil {
-    font-family: Kalam;
-    font-size: 1rem;
-    color: #282F44;
-  }
-  .botones-pag {
-    font-size: 1rem;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .bloque-03 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
 }
 @media screen and (max-width: 768px) {
-  .productos {
-    /* grid-template-rows: 1fr 1fr; */
+  main .productos {
     grid-template-areas: "prod01 prod02" "prod03 prod04" "prod05 prod06" "prod07 prod08" "prod09 prod10" "prod11 prod12" "prod13 prod14" "prod15 prod16";
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 2rem;
     grid-column-gap: 30px;
   }
-  .centrar {
+  .distrib-elementos {
     margin-bottom: 2rem;
     width: 20rem;
     height: 30rem;
   }
-  .recuadro-prod {
+  .productos-img {
     max-width: 15rem;
     max-height: 15rem;
   }
 }
 @media screen and (max-width: 700px) {
-  .productos {
+  main .productos {
     grid-template-areas: "prod01" "prod02" "prod03" "prod04" "prod05" "prod06" "prod07" "prod08" "prod09" "prod10" "prod11" "prod12" "prod13" "prod14" "prod15" "prod16";
   }
   .container-md.p-3 {
@@ -681,13 +648,13 @@ div .foot {
     width: 5px;
   }
   /*bloque de eventos*/
-  h2.predominante.bloques {
+  h2 .titulos-01 {
     font-size: 2rem;
   }
-  .predominante.art {
+  .titulos-02 {
     font-size: 1rem;
   }
-  .predominante {
+  .titulos-03 {
     font-size: 1rem;
   }
   .tit-ev {

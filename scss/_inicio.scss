@@ -6,20 +6,24 @@
     @include tipografia(3rem, center);
 }
 
-
-.titulos-02 {
-    color: $texto;
-    font-family: $fuente-gral;
-
-    @include tipografia(2rem, left);
-}
-
-.titulos-03 {
-    color: $texto;
-    font-family: $fuente-gral;
+    .titulo-02 {
+        color: $texto;
+        font-family: $fuente-gral;
+    
+        @include tipografia(2rem, left);
+    }
 
 
-    @include tipografia(2rem, left);
+
+div{
+    .titulos-03 {
+        color: $texto;
+        font-family: $fuente-gral;
+    
+    
+        @include tipografia(2rem, left);
+    }
+
 }
 
 .titulos-04 {
@@ -33,7 +37,7 @@
 
 div{
     .recuadros03 {
-        @extend .recuadros01;
+        @extend .recuadros00;
     }
 
     .fotos-instagram {
@@ -87,14 +91,14 @@ section {
     
 
     .recuadros02 {
-        @extend .recuadros01;
+        @extend .recuadros00;
         width: 32%;
 
     }
 
     .recuadros04 {
-        @extend .recuadros01;
-        width: 25%;
+        @extend .recuadros00;
+        width: 20%;
         height: 60%;
         margin: 1rem;
     }
@@ -102,7 +106,7 @@ section {
     
 
     .recuadros05 {
-        @extend .recuadros01;
+        @extend .recuadros00;
         padding: 1rem;
         display: flex;
         flex-direction: column;

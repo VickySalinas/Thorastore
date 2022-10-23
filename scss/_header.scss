@@ -26,6 +26,10 @@ header {
     }
 
     div {
+
+        .recuadros01 {
+            @extend .recuadros00;
+        }
         .imagen-logo {
             max-width: 15rem;
             max-height: 20rem;

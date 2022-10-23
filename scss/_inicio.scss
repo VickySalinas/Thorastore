@@ -119,8 +119,9 @@ section {
         cursor: pointer;
         border: transparent solid;
         border-radius: 1rem;
-        transform: translateX(8px);
-
+        /*transform: scale*/
+        
+        
 
     }
     .distrib-elementos {
@@ -144,10 +145,6 @@ section {
         padding: 2rem 2rem 2rem 3rem;
     }  
 
-    
-    
-    
-    
 
 }
 
@@ -156,7 +153,6 @@ section {
     transform: scale(2);
 
 }
-
 
 main{
     .container-md.p-3 {

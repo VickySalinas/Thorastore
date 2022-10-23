@@ -242,7 +242,7 @@ section .productos-img {
   cursor: pointer;
   border: transparent solid;
   border-radius: 1rem;
-  transform: translateX(8px);
+  /*transform: scale*/
 }
 section .distrib-elementos {
   display: flex;
@@ -419,56 +419,53 @@ div .foot {
       flex-direction: column;
 
   }*/
-  .art-01 {
-    align-items: stretch;
-    width: 100%;
+  .recuadros01, div .recuadros03, section .recuadros02, section .recuadros04, section .recuadros05 {
+    border-radius: 20px;
   }
-  .bloque-03 {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-  #iconos {
-    justify-content: center;
-  }
-  .qeb {
-    width: 20rem;
-  }
-  .botones-pag {
+  nav ul {
     font-size: 1rem;
     margin-right: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .horizontal.botones {
-    background: linear-gradient(#D75281, #E6AF2E);
-    border: #D75281 2px solid;
-    border-radius: 20px;
-    padding: 5px;
+  /*
+      .fotos-ind img {
+          max-height: 10rem;
+
+      }
+  */
+  div .eventos {
+    max-width: auto;
+    max-height: 2rem;
+    padding: 0.5rem;
   }
-  .fotos-ind img {
-    max-height: 10rem;
+  div .busqueda {
+    width: 20rem;
   }
-  .familia {
+  div .recuadros02 {
+    align-items: stretch;
+    width: 100%;
+  }
+  div .fotos-nos {
     max-height: 8rem;
     margin: 1rem;
     border: transparent solid;
     border-radius: 2rem;
   }
   /*contactenos*/
-  .logo.dos {
+  h2 .logo-pequeño {
     width: 30%;
   }
   /*paginas secundarias*/
-  .productos {
+  main .productos {
     grid-template-areas: "prod01 prod02 prod03" "prod04 prod05 prod06" "prod07 prod08 prod09" "prod10 prod11 prod12" "prod13 prod14 prod15" "prod16 . .";
   }
-  .centrar {
+  .distrib-elementos {
     width: 15rem;
     height: 23rem;
   }
-  .recuadro-prod {
+  .productos-img {
     max-width: 10rem;
     max-height: 10rem;
     margin: 2rem;
@@ -476,49 +473,55 @@ div .foot {
     border: transparent solid;
     border-radius: 1rem;
   }
-  .nom-prec {
+  .descripcion-producto {
     color: #282F44;
     font-family: Kalam;
     font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 1100px) {
-  #pie {
+  header h1 {
+    font-size: 3rem;
+    transform: translate(180px, 20px);
+  }
+  footer {
     margin: 0.5rem 0 0 0;
   }
-  /*pagina principal*/
-  .art-01 {
+  .recuadros02 {
     margin: 0.5rem 0 0.5rem 0;
-  }
-  .bloques-de-art {
-    margin: 0.5rem;
   }
   .navbar {
     visibility: visible;
   }
-  .butt {
+  div .recuadros01, div .recuadros03, div section .recuadros02, section div .recuadros02, div section .recuadros04, section div .recuadros04, div section .recuadros05, section div .recuadros05 {
     visibility: hidden;
     position: absolute;
     top: -9999px;
   }
-  div.carrito {
+  div .carrito {
     max-width: 10rem;
   }
-  .imagen-logo {
+  div .imagen-logo {
     max-width: 10rem;
     max-height: 15rem;
     transform: translate(-20px, -50px);
   }
-  .logo {
-    font-size: 3rem;
-    transform: translate(120px, 20px);
+  .acordeon {
+    visibility: visible;
+    position: relative;
+    top: 0;
+  }
+  section .recuadros02 {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
   }
   @-webkit-keyframes rotacion-logo {
     from {
       transform: rotateZ(0deg) translate(300px, -30px);
     }
     to {
-      transform: rotateZ(360deg) translate(120px, 20px);
+      transform: rotateZ(360deg) translate(180px, 20px);
     }
   }
   @keyframes rotacion-logo {
@@ -526,7 +529,7 @@ div .foot {
       transform: rotateZ(0deg) translate(300px, -30px);
     }
     to {
-      transform: rotateZ(360deg) translate(120px, 20px);
+      transform: rotateZ(360deg) translate(180px, 20px);
     }
   }
   /*contactenos*/
@@ -699,16 +702,6 @@ div .foot {
     font-size: 1rem;
     font-family: "kalam";
     text-align: center;
-  }
-  .acordeon {
-    visibility: visible;
-    position: relative;
-    top: 0;
-  }
-  .bloques-de-art {
-    visibility: hidden;
-    position: absolute;
-    top: -9999px;
   }
   /*nosotros*/
   .familia {

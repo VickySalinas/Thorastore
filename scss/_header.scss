@@ -16,22 +16,23 @@ header {
         animation-timing-function: ease-in-out;
     }
 
-    h2{
-        .logo-pequeño{
+    h2 {
+        .logo-pequeño {
             color: $color-principal;
             font-family: $fuente-logo;
             font-size: 2rem;
         }
-    
+
     }
 
-    
+
 
     div {
-        
+
         .recuadros01 {
             @extend .recuadros00;
         }
+
         .imagen-logo {
             max-width: $tamaño+5;
             max-height: $tamaño*2;
@@ -43,17 +44,18 @@ header {
     div {
         ul {
             display: inline-block;
-            list-style: none;            
+            list-style: none;
             padding: 1rem 3rem 1rem 3rem;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             gap: 2rem;
 
-            
+
         }
     }
-    .logo-pequeño{
+
+    .logo-pequeño {
         font-family: $fuente-logo;
         color: $color-principal;
         font-size: 2rem;
@@ -62,12 +64,13 @@ header {
 
 }
 
-.bot-nav{
+.bot-nav {
     border-bottom: $subrayado;
     margin-left: auto;
     width: $tamaño+5;
-    
+
 }
+
 a {
     text-decoration: none;
 }
@@ -80,7 +83,7 @@ nav {
         cursor: pointer;
         text-align: right;
 
-        
+
     }
 }
 
@@ -100,7 +103,7 @@ nav {
 }
 
 div {
-    
+
 
     .carrito {
         background-color: rgb(238, 225, 197);
@@ -135,7 +138,7 @@ div {
 }
 
 div {
-    
+
 
     .nav-deco {
         font-family: $fuente-gral;

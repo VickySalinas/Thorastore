@@ -2,72 +2,76 @@
 
     .recuadros01 {
         border-radius: 20px;
-    
-    }
-    
-
-
-nav{
-    ul{
-        font-size: 1rem;
-        margin-right: 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-main{
-    .productos {
-        grid-template-areas:
-            "prod01 prod02 prod03"
-            "prod04 prod05 prod06"
-            "prod07 prod08 prod09"
-            "prod10 prod11 prod12"
-            "prod13 prod14 prod15"
-            "prod16 . ."
-
-        ;
-    }
-
-div{
-    .eventos {
-        @include size(auto, 4rem, 0.5rem);
-    }
-    .busqueda {
-        width: $tamaño*2;
-
-    }
-    .recuadros02 {
-        align-items: stretch;
-        width: 100%;
 
     }
 
-    .fotos-nos {
-        max-height: 8rem;
-        margin: 1rem;
-        border: transparent solid;
-        border-radius: 2rem;
+
+
+    nav {
+        ul {
+            font-size: 1rem;
+            margin-right: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
     }
-}
 
-h2{
-    .logo-pequeño {
-        width: 30%;
+    main {
+        .productos {
+            grid-template-areas:
+                "prod01 prod02 prod03"
+                "prod04 prod05 prod06"
+                "prod07 prod08 prod09"
+                "prod10 prod11 prod12"
+                "prod13 prod14 prod15"
+                "prod16 . ."
+
+            ;
+        }
+
+        div {
+            .eventos {
+                @include size(auto, 4rem, 0.5rem);
+            }
+
+            .busqueda {
+                width: $tamaño*2;
+
+            }
+
+            .recuadros02 {
+                align-items: stretch;
+                width: 100%;
+
+            }
+
+            .fotos-nos {
+                max-height: 8rem;
+                margin: 1rem;
+                border: transparent solid;
+                border-radius: 2rem;
+            }
+        }
+
+        h2 {
+            .logo-pequeño {
+                width: 30%;
+            }
+
+        }
+
+
+
     }
 
-}
-
-    
-
-    }
-    section{
+    section {
 
         .distrib-elementos {
             width: $tamaño+5;
             height: ($tamaño*2)+3;
         }
+
         .productos-img {
             max-width: 10rem;
             max-height: 10rem;
@@ -75,10 +79,10 @@ h2{
             cursor: pointer;
             border: transparent solid;
             border-radius: 1rem;
-    
-    
+
+
         }
-    
+
         .descripcion-producto {
             color: #282F44;
             font-family: Kalam;
@@ -94,26 +98,26 @@ h2{
 
 
 @media screen and (max-width: 1100px) {
-    
 
 
-    header{
+
+    header {
         h1 {
-                font-size: 3rem;
-                transform: translate(180px, 20px);
-        
-            }
-    
+            font-size: 3rem;
+            transform: translate(180px, 20px);
+
+        }
+
     }
 
-    main{
+    main {
 
         .productos {
             grid-column-gap: 0.5rem;
             grid-row-gap: 0.5rem;
         }
     }
-    
+
 
     footer {
         margin: 0.5rem 0 0 0;
@@ -123,89 +127,94 @@ h2{
     .navbar {
         visibility: visible;
     }
-    div{
 
-    .recuadros01 {
-        visibility: hidden;
-        position: absolute;
-        top: -9999px;
-    }
+    div {
 
-    .carrito {
-        max-width: $tamaño;
+        .recuadros01 {
+            visibility: hidden;
+            position: absolute;
+            top: -9999px;
+        }
 
-
-    }
-    .descripcion-producto {
-        color: #282F44;
-        font-family: Kalam;
-        font-size: 0.7rem;
-    }
-
-    .imagen-logo {
-        max-width: $tamaño;
-        max-height: $tamaño+5;
-        transform: translate(-20px, -50px);
-    }
-
-    .eventos {
-        @include size(auto, 8rem, 0.5rem);
-        
-    }
-    
-}
+        .carrito {
+            max-width: $tamaño;
 
 
-.acordeon {
-    visibility: visible;
-    position: relative;
-    top: 0;
-}
-section{
+        }
 
-    .recuadros02{
-        visibility: hidden;
-        position: absolute;
-        top: -9999px;
+        .descripcion-producto {
+            color: #282F44;
+            font-family: Kalam;
+            font-size: 0.7rem;
+        }
 
-    }   
-    .formulario {
+        .imagen-logo {
+            max-width: $tamaño;
+            max-height: $tamaño+5;
+            transform: translate(-20px, -50px);
+        }
 
-        justify-content: center;
-        align-items: flex-start;
-        padding: 1rem 1rem 1rem 1rem;
-    }
-    .recuadros05 {
+        .eventos {
+            @include size(auto, 8rem, 0.5rem);
 
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-end;
-    }
-
-    .distrib-elementos {
-        width: 14rem;
-        height: 19rem;
-        margin-bottom: 0.2rem;
-    }
-
-    .productos-img {
-        max-width: 7rem;
-        max-height: 7rem;
-        margin: 2rem;
-
+        }
 
     }
 
-    .recuadros04 {
-        visibility: hidden;
-        position: absolute;
-        left: -9999px;
+
+    .acordeon {
+        visibility: visible;
+        position: relative;
+        top: 0;
     }
-}
-    
+
+    section {
+
+        .recuadros02 {
+            visibility: hidden;
+            position: absolute;
+            top: -9999px;
+
+        }
+
+        .formulario {
+
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+
+        .recuadros05 {
+
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .distrib-elementos {
+            width: 14rem;
+            height: 19rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .productos-img {
+            max-width: 7rem;
+            max-height: 7rem;
+            margin: 2rem;
+
+
+        }
+
+        .recuadros04 {
+            visibility: hidden;
+            position: absolute;
+            left: -9999px;
+        }
+    }
+
 
     @keyframes rotacion-logo {
 
@@ -231,10 +240,10 @@ section{
 @media screen and (max-width:768px) {
 
 
-    main{
+    main {
 
         .productos {
-    
+
             grid-template-areas:
                 "prod01 prod02"
                 "prod03 prod04"
@@ -248,21 +257,21 @@ section{
             grid-template-columns: repeat(2, 1fr);
             grid-row-gap: 2rem;
             grid-column-gap: 30px;
-    
+
         }
     }
 
-    
-    section{
+    section {
         .distrib-elementos {
             margin-bottom: 2rem;
             width: $tamaño*2;
             height: $tamaño*3;
         }
+
         .productos-img {
             max-width: $tamaño+5;
             max-height: $tamaño+5;
-    
+
         }
 
     }
@@ -270,7 +279,7 @@ section{
 }
 
 @media screen and (max-width: 700px) {
-    main{
+    main {
         .productos {
             grid-template-areas:
                 "prod01"
@@ -291,18 +300,19 @@ section{
                 "prod16"
             ;
         }
-    
+
         .container-md.p-3.calecita {
-        
+
             width: 300px;
             height: 500px
         }
     }
 
-    div{
-                h1{
+    div {
+        h1 {
             transform: translate(150px, -20px);
         }
+
         .imagen-logo {
             width: auto;
             height: $tamaño;
@@ -315,12 +325,12 @@ section{
         from {
             transform: rotateZ(0deg) translate(200px, -20px);
         }
-    
+
         to {
             transform: rotateZ(360deg) translate(90px, -20px);
         }
-    
-    
+
+
     }
 
 
@@ -329,36 +339,41 @@ section{
 
 @media screen and (max-width: 425px) {
 
-    main{
+    main {
         .titulos-01 {
-    
+
             @include tipografia(2rem, center);
-    
+
         }
-        
+
     }
-    footer{
+
+    footer {
         .foot {
             width: 200px;
         }
-        
+
     }
-div{
-    
-    .busqueda {
-        margin: 0 2rem 1rem 2rem;
-    }
-    .carrito {
-        margin: 0 1rem 0 1rem;
-    
-    }
-    .titulos-04{
-        @include tipografia(1rem, center);
-    }
-    .eventos {
-        @include size(auto, 6rem, 0.5rem);
-        
-    }
+
+    div {
+
+        .busqueda {
+            margin: 0 2rem 1rem 2rem;
+        }
+
+        .carrito {
+            margin: 0 1rem 0 1rem;
+
+        }
+
+        .titulos-04 {
+            @include tipografia(1rem, center);
+        }
+
+        .eventos {
+            @include size(auto, 6rem, 0.5rem);
+
+        }
     }
 
     .navbar {
@@ -372,7 +387,7 @@ div{
     }
 
 
-    
+
 
 
 

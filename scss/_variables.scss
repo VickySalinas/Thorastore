@@ -9,13 +9,13 @@ $subrayado: #E6AF2E solid;
 $tamaño: 10rem;
 
 
-@mixin tipografia ($font-size, $text-align){
+@mixin tipografia ($font-size, $text-align) {
     font-size: $font-size;
     text-align: $text-align;
-    
+
 }
 
-@mixin size ($max-width, $max-height, $padding){
+@mixin size ($max-width, $max-height, $padding) {
     max-width: $max-width;
     max-height: $max-height;
     padding: $padding;
@@ -30,4 +30,3 @@ $tamaño: 10rem;
     border: $border;
     padding: 5px;
 }
-

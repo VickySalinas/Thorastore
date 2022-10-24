@@ -1,35 +1,33 @@
+.titulo-02 {
+    color: $texto;
+    font-family: $fuente-gral;
 
-
-    .titulo-02 {
-        color: $texto;
-        font-family: $fuente-gral;
-    
-        @include tipografia(2rem, left);
-    }
+    @include tipografia(2rem, left);
+}
 
 
 
-div{
+div {
     .titulos-03 {
         color: $texto;
         font-family: $fuente-gral;
-    
-    
+
+
         @include tipografia(2rem, left);
     }
 
     .titulos-04 {
         color: $texto;
         font-family: $fuente-gral;
-    
+
         @include tipografia(1rem, center);
-    
+
     }
 }
 
 
 
-div{
+div {
     .recuadros03 {
         @extend .recuadros00;
     }
@@ -73,7 +71,7 @@ div{
         @include size(8rem, 8rem, 1rem);
     }
 
-    .accordion-body{
+    .accordion-body {
         background-color: $color-fondo;
     }
 }
@@ -86,7 +84,7 @@ div{
 }
 
 section {
-    
+
 
     .recuadros02 {
         @extend .recuadros00;
@@ -101,7 +99,7 @@ section {
         margin: 1rem;
     }
 
-    
+
 
     .recuadros05 {
         @extend .recuadros00;
@@ -112,6 +110,7 @@ section {
         justify-content: flex-start;
         align-items: flex-end;
     }
+
     .productos-img {
         max-width: $tamaño+5;
         max-height: $tamaño+5;
@@ -122,10 +121,11 @@ section {
         border: transparent solid;
         border-radius: 1rem;
 
-        
-        
+
+
 
     }
+
     .distrib-elementos {
         display: flex;
         flex-direction: column;
@@ -138,6 +138,7 @@ section {
         width: $tamaño*2;
         height: $tamaño*3;
     }
+
     .formulario {
         display: flex;
         flex-direction: row;
@@ -145,7 +146,7 @@ section {
         justify-content: center;
         align-items: flex-start;
         padding: 2rem 2rem 2rem 3rem;
-    }  
+    }
 
 
 }
@@ -156,18 +157,19 @@ section {
 
 }
 
-.accordion-button{
+.accordion-button {
     background: linear-gradient($degrade);
 }
 
-main{
+main {
     .titulos-01 {
         color: $texto;
         font-family: $fuente-gral;
         border-bottom: $subrayado;
-    
+
         @include tipografia(3rem, center);
     }
+
     .container-md.p-3 {
 
         padding: 1rem;
@@ -218,14 +220,14 @@ main{
         flex-wrap: nowrap;
         padding-left: 2rem;
     }
-    
-    .img-fondo{
+
+    .img-fondo {
         background-image: url(../img/logothora-removebg-preview.png);
-resize: both;
-overflow: auto;
-background-repeat: space;
-background-position: center;
-background-size: 30rem 40rem;
+        resize: both;
+        overflow: auto;
+        background-repeat: space;
+        background-position: center;
+        background-size: 30rem 40rem;
     }
 
     .productos {
@@ -312,14 +314,13 @@ background-size: 30rem 40rem;
         grid-area: prod16;
     }
 
-    .titulo-contacto{
+    .titulo-contacto {
         color: $color-principal;
-font-weight: bolder;
-font-size: 5rem;
-font-family: $fuente-logo;
-text-align: justify;
-margin: 1rem 0 1rem 0;
-text-align: center;
+        font-weight: bolder;
+        font-size: 5rem;
+        font-family: $fuente-logo;
+        text-align: justify;
+        margin: 1rem 0 1rem 0;
+        text-align: center;
     }
 }
-

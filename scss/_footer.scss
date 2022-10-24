@@ -1,16 +1,18 @@
-footer{
+footer {
     background-color: $color-fondo;
     border-top: $subrayado;
     margin-top: 1rem;
     padding: 0 0 1rem 1rem;
+
     .fa-solid.fa-envelope {
         padding-top: 1rem;
         color: $color-principal;
     }
-    
+
 }
-div{
-    .boton-enviar{
+
+div {
+    .boton-enviar {
         border: $texto solid;
         background-color: $color-principal;
         border-style: double;
@@ -19,13 +21,14 @@ div{
         margin: 0.5rem 0 0.5rem 0;
         font-family: $fuente-gral;
         font-size: 1rem;
-    
-    
+
+
     }
+
     .let-foot {
         font-size: 1rem;
     }
-    
+
     .foot {
         border: $color-principal solid;
         border-radius: 2rem;

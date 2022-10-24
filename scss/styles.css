@@ -592,7 +592,7 @@ div .foot {
     height: 500px;
   }
   div h1 {
-    transform: translate(90px, -20px);
+    transform: translate(150px, -20px);
   }
   div .imagen-logo {
     width: auto;

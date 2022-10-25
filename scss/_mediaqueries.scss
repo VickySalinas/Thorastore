@@ -126,6 +126,13 @@
 
     .navbar {
         visibility: visible;
+        transform: translate(400px, -30px);
+    }
+
+    .butt {
+        visibility: hidden;
+        position: absolute;
+        top: -9999px;
     }
 
     div {
@@ -318,6 +325,12 @@
             height: $tamaño;
             transform: translate(-20px, -20px);
         }
+        .busqueda{
+        width: $tamaño;
+        margin: 0.5;
+        border-radius: 1rem;
+        }
+
     }
 
     @keyframes rotacion-logo {
@@ -338,6 +351,14 @@
 }
 
 @media screen and (max-width: 425px) {
+    header {
+        h1 {
+            font-size: 2rem;
+            transform: translate(120px, -20px);
+
+        }
+
+    }
 
     main {
         .titulos-01 {
@@ -362,7 +383,7 @@
         }
 
         .carrito {
-            margin: 0 1rem 0 1rem;
+            margin: 0.5rem;
 
         }
 
@@ -375,22 +396,9 @@
 
         }
     }
-
     .navbar {
-        visibility: visible;
+        
+        transform: translate(50px, -30px);
     }
 
-    .butt {
-        visibility: hidden;
-        position: absolute;
-        top: -9999px;
     }
-
-
-
-
-
-
-
-
-}

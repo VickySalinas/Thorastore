@@ -483,6 +483,12 @@ div .foot {
   }
   .navbar {
     visibility: visible;
+    transform: translate(400px, -30px);
+  }
+  .butt {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
   }
   div .recuadros01 {
     visibility: hidden;
@@ -599,6 +605,11 @@ div .foot {
     height: 10rem;
     transform: translate(-20px, -20px);
   }
+  div .busqueda {
+    width: 10rem;
+    margin: 0.5;
+    border-radius: 1rem;
+  }
   @-webkit-keyframes rotacion-logo {
     from {
       transform: rotateZ(0deg) translate(200px, -20px);
@@ -617,6 +628,10 @@ div .foot {
   }
 }
 @media screen and (max-width: 425px) {
+  header h1 {
+    font-size: 2rem;
+    transform: translate(120px, -20px);
+  }
   main .titulos-01 {
     font-size: 2rem;
     text-align: center;
@@ -628,7 +643,7 @@ div .foot {
     margin: 0 2rem 1rem 2rem;
   }
   div .carrito {
-    margin: 0 1rem 0 1rem;
+    margin: 0.5rem;
   }
   div .titulos-04 {
     font-size: 1rem;
@@ -640,11 +655,6 @@ div .foot {
     padding: 0.5rem;
   }
   .navbar {
-    visibility: visible;
-  }
-  .butt {
-    visibility: hidden;
-    position: absolute;
-    top: -9999px;
+    transform: translate(50px, -30px);
   }
 }/*# sourceMappingURL=styles.css.map */

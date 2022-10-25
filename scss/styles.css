@@ -657,4 +657,9 @@ div .foot {
   .navbar {
     transform: translate(50px, -30px);
   }
+}
+@media screen and (max-width: 400px) {
+  .navbar {
+    transform: translate(250px, -30px);
+  }
 }/*# sourceMappingURL=styles.css.map */

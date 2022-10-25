@@ -402,3 +402,9 @@
     }
 
     }
+    @media screen and (max-width:400px) {
+        .navbar {
+        
+            transform: translate(250px, -30px);
+        }
+    }

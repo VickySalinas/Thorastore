@@ -50,6 +50,7 @@ header {
             flex-direction: row;
             justify-content: flex-end;
             gap: 2rem;
+            
 
 
         }
@@ -175,8 +176,5 @@ div {
         background: linear-gradient($degrade);
     }
 
-    /*.container-fluid.ham {
-        max-width: 0px;
-        max-height: 0px;
-    }*/
+
 }

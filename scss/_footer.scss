@@ -18,7 +18,7 @@ div {
         border-style: double;
         width: $tamaño/2;
         height: 3rem;
-        margin: 0.5rem 0 0.5rem 0;
+        margin: 0.5rem;
         font-family: $fuente-gral;
         font-size: 1rem;
 
@@ -35,4 +35,8 @@ div {
         background-color: rgb(238, 225, 197);
     }
 
+}
+
+.boton-enviar:hover{
+background: #d75281;
 }

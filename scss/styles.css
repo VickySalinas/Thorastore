@@ -145,8 +145,9 @@ div .dropdown-menu {
 .titulo-02 {
   color: #282F44;
   font-family: kalam;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: left;
+  font-size: rfs-fluid-value(1rem);
 }
 
 div .titulos-03 {
@@ -400,7 +401,7 @@ div .boton-enviar {
   border-style: double;
   width: 5rem;
   height: 3rem;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem;
   font-family: kalam;
   font-size: 1rem;
 }
@@ -411,6 +412,10 @@ div .foot {
   border: #E6AF2E solid;
   border-radius: 2rem;
   background-color: rgb(238, 225, 197);
+}
+
+.boton-enviar:hover {
+  background: #d75281;
 }
 
 @media screen and (max-width: 1600px) {

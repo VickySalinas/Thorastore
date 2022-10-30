@@ -1,9 +1,10 @@
 .titulo-02 {
     color: $texto;
     font-family: $fuente-gral;
-
-    @include tipografia(2rem, left);
+    @include tipografia(1rem, left);
+    font-size: rfs-fluid-value(1rem);
 }
+
 
 
 

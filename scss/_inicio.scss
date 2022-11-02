@@ -128,10 +128,7 @@ section {
     }
 
     .distrib-elementos {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+
         text-align: center;
         border: $border;
         border-radius: 1rem;
@@ -232,11 +229,9 @@ main {
     }
 
     .productos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         display: grid;
+        flex-direction: row;
+        flex-wrap: wrap;        
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
@@ -245,7 +240,7 @@ main {
             "prod09 prod10 prod11 prod12"
             "prod13 prod14 prod15 prod16"
         ;
-        grid-column-gap: 5px;
+        grid-column-gap: 80px;
         grid-row-gap: 1rem;
 
 

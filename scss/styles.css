@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
 .recuadros00, section .recuadros05, section .recuadros04, section .recuadros02, div .recuadros03, header div .recuadros01 {
   background: linear-gradient(#D75281, #E6AF2E);
   font-family: kalam;
@@ -236,10 +240,6 @@ section .productos-img {
   border-radius: 1rem;
 }
 section .distrib-elementos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   text-align: center;
   border: solid #d75281;
   border-radius: 1rem;
@@ -315,15 +315,13 @@ main .img-fondo {
   background-size: 30rem 40rem;
 }
 main .productos {
-  display: flex;
+  display: grid;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "prod01 prod02 prod03 prod04" "prod05 prod06 prod07 prod08" "prod09 prod10 prod11 prod12" "prod13 prod14 prod15 prod16";
-  grid-column-gap: 5px;
+  grid-column-gap: 80px;
   grid-row-gap: 1rem;
 }
 main .prod01 {

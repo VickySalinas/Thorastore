@@ -410,6 +410,7 @@ div .foot {
   border: #E6AF2E solid;
   border-radius: 2rem;
   background-color: rgb(238, 225, 197);
+  margin: 1rem;
 }
 
 .boton-enviar:hover {

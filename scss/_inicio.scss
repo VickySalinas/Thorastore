@@ -6,29 +6,22 @@
 }
 
 
-
-
 div {
+    
     .titulos-03 {
         color: $texto;
         font-family: $fuente-gral;
-
-
+    
+    
         @include tipografia(2rem, left);
     }
-
+    
     .titulos-04 {
         color: $texto;
         font-family: $fuente-gral;
-
+    
         @include tipografia(1rem, center);
-
     }
-}
-
-
-
-div {
     .recuadros03 {
         @extend .recuadros00;
     }
@@ -58,6 +51,7 @@ div {
         color: $texto;
         font-family: $fuente-gral;
         font-size: 1rem;
+        
         
     }
 
@@ -137,6 +131,7 @@ section {
         margin-bottom: 1rem;
         width: $tamaño*2;
         height: $tamaño*3;
+        overflow: hidden;
         
         
     }
@@ -155,7 +150,7 @@ section {
 
 
 .productos-img:hover {
-    transform: scale(2);
+    transform: scale(3.5);
 
 }
 
@@ -194,7 +189,7 @@ main {
         width: 800px;
         height: 1000px;
         cursor: pointer;
-        
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 
 
@@ -211,7 +206,6 @@ main {
     .color {
         color: $texto;
         background-color: rgba(238, 225, 197, 0.7);
-
         position: relative;
 
     }
@@ -231,6 +225,7 @@ main {
         background-repeat: space;
         background-position: center;
         background-size: 30rem 40rem;
+        
     }
 
     .productos {
@@ -247,7 +242,7 @@ main {
         ;
         grid-column-gap: 80px;
         grid-row-gap: 1rem;
-        
+
 
     }
 

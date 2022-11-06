@@ -168,7 +168,6 @@ div .titulos-04 {
   font-size: 1rem;
   text-align: center;
 }
-
 div .fotos-instagram {
   display: flex;
   flex-direction: row;
@@ -249,6 +248,7 @@ section .distrib-elementos {
   margin-bottom: 1rem;
   width: 20rem;
   height: 30rem;
+  overflow: hidden;
 }
 section .formulario {
   display: flex;
@@ -260,7 +260,7 @@ section .formulario {
 }
 
 .productos-img:hover {
-  transform: scale(2);
+  transform: scale(3.5);
 }
 
 .accordion-button {
@@ -291,6 +291,7 @@ main .calecita {
   width: 800px;
   height: 1000px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 main .calecita img {
   max-height: 400px;

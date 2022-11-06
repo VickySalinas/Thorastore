@@ -100,6 +100,7 @@ div .carrito {
   padding: 1rem;
   margin: 1rem;
   width: 15rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 div .carrito #inputSearch {
   border: none;
@@ -113,6 +114,7 @@ div .busqueda {
   border-radius: 3rem;
   border: #E6AF2E 3px solid;
   background-color: rgb(238, 225, 197);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 /*hamburguesa*/
@@ -240,6 +242,7 @@ section .productos-img {
   border-radius: 1rem;
 }
 section .distrib-elementos {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   text-align: center;
   border: solid #d75281;
   border-radius: 1rem;
@@ -410,7 +413,7 @@ div .foot {
   border: #E6AF2E solid;
   border-radius: 2rem;
   background-color: rgb(238, 225, 197);
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .boton-enviar:hover {
@@ -424,8 +427,6 @@ div .foot {
   nav ul {
     font-size: 1rem;
     margin-right: 15px;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
   }
   main .productos {

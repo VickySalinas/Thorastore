@@ -113,6 +113,7 @@ div {
         padding: 1rem;
         margin: 1rem;
         width: 15rem;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
         #inputSearch {
             border: none;
@@ -128,6 +129,7 @@ div {
         border-radius: 3rem;
         border: $color-principal 3px solid;
         background-color: rgb(238, 225, 197);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     }
 }
 

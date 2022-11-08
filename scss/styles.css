@@ -62,6 +62,7 @@ header .logo-pequeño {
   border-bottom: #E6AF2E solid;
   margin-left: auto;
   width: 15rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 a {
@@ -188,6 +189,9 @@ div .descripcion-producto {
   color: #282F44;
   font-family: kalam;
   font-size: 1rem;
+  background-color: rgba(238, 225, 197, 0.7);
+  z-index: 2;
+  position: relative;
 }
 div .eventos {
   max-width: auto;
@@ -216,11 +220,12 @@ div .accordion-body {
 
 section .recuadros02 {
   width: 32%;
+  margin-left: 1.1rem;
 }
 section .recuadros04 {
   width: 20%;
   height: 60%;
-  margin: 1rem;
+  margin: 2rem;
 }
 section .recuadros05 {
   padding: 1rem;
@@ -239,6 +244,8 @@ section .productos-img {
   cursor: pointer;
   border: transparent solid;
   border-radius: 1rem;
+  position: relative;
+  z-index: 0;
 }
 section .distrib-elementos {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -271,6 +278,7 @@ main .titulos-01 {
   color: #282F44;
   font-family: kalam;
   border-bottom: #E6AF2E solid;
+  margin: 0.5rem;
   font-size: 3rem;
   text-align: center;
 }
@@ -327,6 +335,8 @@ main .productos {
   grid-template-areas: "prod01 prod02 prod03 prod04" "prod05 prod06 prod07 prod08" "prod09 prod10 prod11 prod12" "prod13 prod14 prod15 prod16";
   grid-column-gap: 80px;
   grid-row-gap: 1rem;
+  z-index: 2;
+  position: relative;
 }
 main .prod01 {
   grid-area: prod01;

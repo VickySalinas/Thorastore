@@ -5,8 +5,6 @@
 
     }
 
-
-
     nav {
         ul {
             font-size: 1rem;
@@ -14,7 +12,7 @@
             justify-content: center;
         }
     }
-    
+
     main {
         .productos {
             grid-template-areas:
@@ -124,7 +122,7 @@
 
     .navbar {
         visibility: visible;
-        
+
     }
 
     .butt {
@@ -323,10 +321,11 @@
             height: $tamaño;
             transform: translate(-20px, -20px);
         }
-        .busqueda{
-        width: $tamaño;
-        margin: 0.5;
-        border-radius: 1rem;
+
+        .busqueda {
+            width: $tamaño;
+            margin: 0.5;
+            border-radius: 1rem;
         }
 
     }
@@ -394,7 +393,6 @@
 
         }
     }
-    
 
-    }
-    
+
+}

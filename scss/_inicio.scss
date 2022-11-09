@@ -7,21 +7,22 @@
 
 
 div {
-    
+
     .titulos-03 {
         color: $texto;
         font-family: $fuente-gral;
-    
-    
+
+
         @include tipografia(2rem, left);
     }
-    
+
     .titulos-04 {
         color: $texto;
         font-family: $fuente-gral;
-    
+
         @include tipografia(1rem, center);
     }
+
     .recuadros03 {
         @extend .recuadros00;
     }
@@ -71,7 +72,7 @@ div {
     .accordion-body {
         background-color: $color-fondo;
     }
-    
+
 }
 
 .acordeon {
@@ -135,8 +136,8 @@ section {
         width: $tamaño*2;
         height: $tamaño*3;
         overflow: hidden;
-        
-        
+
+
     }
 
     .formulario {
@@ -229,13 +230,13 @@ main {
         background-position: center;
         background-size: 30rem 40rem;
         position: relative;
-        
+
     }
 
     .productos {
         display: grid;
         flex-direction: row;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
